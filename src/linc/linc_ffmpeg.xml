@@ -1,0 +1,35 @@
+<xml >
+    <files id="haxe">
+		<compilerflag value="-DLINC_FFMPEG" />   
+
+        <compilerflag value="--std=c++11" if="android || linux" />
+
+        <compilerflag value="-I${LINC_FFMPEG_PATH}linc/" />
+        <compilerflag value="-I${LINC_FFMPEG_PATH}lib/FFmpeg" />
+        <compilerflag value="-I${LINC_FFMPEG_PATH}lib/FFmpeg/include" />
+
+        <!--include name="./ffmpeg_files.xml" /-->
+
+        <file name="${LINC_FFMPEG_PATH}linc/linc_ffmpeg.h" />        
+		<file name="${LINC_FFMPEG_PATH}linc/linc_ffmpeg.cpp" />
+    </files>
+
+    <target id="haxe">
+		<section if="windows">
+			<compilerflag value="/libpath:${LINC_FFMPEG_PATH}lib/FFmpeg/lib/windows/" />
+			
+            <lib name="${LINC_FFMPEG_PATH}lib/FFmpeg/lib/windows/x64/avutil.lib" />
+			<lib name="${LINC_FFMPEG_PATH}lib/FFmpeg/lib/windows/x64/avcodec.lib" />
+            <lib name="${LINC_FFMPEG_PATH}lib/FFmpeg/lib/windows/x64/swscale.lib" />
+            <lib name="${LINC_FFMPEG_PATH}lib/FFmpeg/lib/windows/x64/avdevice.lib" />
+            <lib name="${LINC_FFMPEG_PATH}lib/FFmpeg/lib/windows/x64/avfilter.lib" />
+            <lib name="${LINC_FFMPEG_PATH}lib/FFmpeg/lib/windows/x64/avformat.lib" />
+			<lib name="${LINC_FFMPEG_PATH}lib/FFmpeg/lib/windows/x64/swresample.lib" />
+        </section>
+
+        <section if="android">
+            <compilerflag value="/libpath:${LINC_FFMPEG_PATH}lib/FFmpeg/lib/android/armeabi-v7a/" />
+                
+        </section>
+    </target>
+</xml>

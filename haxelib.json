@@ -1,0 +1,12 @@
+{
+    "name"         : "linc_ffmpeg",
+    "url"          : "https://github.com/Dimous/linc_ffmpeg",
+    "license"      : "MIT",
+    "tags"         : ["ffmpeg", "linc"],
+    "description"  : "fat-free linc FFMPEG",
+    "version"      : "0.0.1",
+    "releasenote"  : "Minimal set of bindings you would need to create a simple media player",
+    "classPath"    : "src",
+    "contributors" : ["dimous"],
+    "dependencies" : {}
+}
