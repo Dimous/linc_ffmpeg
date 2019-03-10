@@ -13,7 +13,7 @@ extern class Ffmpeg {}
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
-extern abstract AVPixelFormat(AVPixelFormatImpl) { 
+extern abstract AVPixelFormat(AVPixelFormatImpl) {
 	@:native("AV_PIX_FMT_NONE")
 	final AV_PIX_FMT_NONE;
 
@@ -832,1139 +832,1139 @@ extern abstract AVCodecID(AVCodecIDImpl) {
 	@:native("AV_CODEC_ID_FRAPS")
 	final AV_CODEC_ID_FRAPS;
 
-    @:native("AV_CODEC_ID_TRUEMOTION2")
+	@:native("AV_CODEC_ID_TRUEMOTION2")
 	final AV_CODEC_ID_TRUEMOTION2;
 
-    @:native("AV_CODEC_ID_BMP")
+	@:native("AV_CODEC_ID_BMP")
 	final AV_CODEC_ID_BMP;
 
-    @:native("AV_CODEC_ID_CSCD")
+	@:native("AV_CODEC_ID_CSCD")
 	final AV_CODEC_ID_CSCD;
 
-    @:native("AV_CODEC_ID_MMVIDEO")
+	@:native("AV_CODEC_ID_MMVIDEO")
 	final AV_CODEC_ID_MMVIDEO;
 
-    @:native("AV_CODEC_ID_ZMBV")
+	@:native("AV_CODEC_ID_ZMBV")
 	final AV_CODEC_ID_ZMBV;
 
-    @:native("AV_CODEC_ID_AVS")
+	@:native("AV_CODEC_ID_AVS")
 	final AV_CODEC_ID_AVS;
 
-    @:native("AV_CODEC_ID_SMACKVIDEO")
+	@:native("AV_CODEC_ID_SMACKVIDEO")
 	final AV_CODEC_ID_SMACKVIDEO;
 
-    @:native("AV_CODEC_ID_NUV")
+	@:native("AV_CODEC_ID_NUV")
 	final AV_CODEC_ID_NUV;
 
-    @:native("AV_CODEC_ID_KMVC")
+	@:native("AV_CODEC_ID_KMVC")
 	final AV_CODEC_ID_KMVC;
 
-    @:native("AV_CODEC_ID_FLASHSV")
+	@:native("AV_CODEC_ID_FLASHSV")
 	final AV_CODEC_ID_FLASHSV;
 
-    @:native("AV_CODEC_ID_CAVS")
+	@:native("AV_CODEC_ID_CAVS")
 	final AV_CODEC_ID_CAVS;
 
-    @:native("AV_CODEC_ID_JPEG2000")
+	@:native("AV_CODEC_ID_JPEG2000")
 	final AV_CODEC_ID_JPEG2000;
 
-    @:native("AV_CODEC_ID_VMNC")
+	@:native("AV_CODEC_ID_VMNC")
 	final AV_CODEC_ID_VMNC;
 
-    @:native("AV_CODEC_ID_VP5")
+	@:native("AV_CODEC_ID_VP5")
 	final AV_CODEC_ID_VP5;
 
-    @:native("AV_CODEC_ID_VP6")
+	@:native("AV_CODEC_ID_VP6")
 	final AV_CODEC_ID_VP6;
 
-    @:native("AV_CODEC_ID_VP6F")
+	@:native("AV_CODEC_ID_VP6F")
 	final AV_CODEC_ID_VP6F;
 
-    @:native("AV_CODEC_ID_TARGA")
+	@:native("AV_CODEC_ID_TARGA")
 	final AV_CODEC_ID_TARGA;
 
-    @:native("AV_CODEC_ID_DSICINVIDEO")
+	@:native("AV_CODEC_ID_DSICINVIDEO")
 	final AV_CODEC_ID_DSICINVIDEO;
 
-    @:native("AV_CODEC_ID_TIERTEXSEQVIDEO")
+	@:native("AV_CODEC_ID_TIERTEXSEQVIDEO")
 	final AV_CODEC_ID_TIERTEXSEQVIDEO;
 
-    @:native("AV_CODEC_ID_TIFF")
+	@:native("AV_CODEC_ID_TIFF")
 	final AV_CODEC_ID_TIFF;
 
-    @:native("AV_CODEC_ID_GIF")
+	@:native("AV_CODEC_ID_GIF")
 	final AV_CODEC_ID_GIF;
 
-    @:native("AV_CODEC_ID_DXA")
+	@:native("AV_CODEC_ID_DXA")
 	final AV_CODEC_ID_DXA;
 
-    @:native("AV_CODEC_ID_DNXHD")
+	@:native("AV_CODEC_ID_DNXHD")
 	final AV_CODEC_ID_DNXHD;
 
-    @:native("AV_CODEC_ID_THP")
+	@:native("AV_CODEC_ID_THP")
 	final AV_CODEC_ID_THP;
 
-    @:native("AV_CODEC_ID_SGI")
+	@:native("AV_CODEC_ID_SGI")
 	final AV_CODEC_ID_SGI;
 
-    @:native("AV_CODEC_ID_C93")
+	@:native("AV_CODEC_ID_C93")
 	final AV_CODEC_ID_C93;
 
-    @:native("AV_CODEC_ID_BETHSOFTVID")
+	@:native("AV_CODEC_ID_BETHSOFTVID")
 	final AV_CODEC_ID_BETHSOFTVID;
 
-    @:native("AV_CODEC_ID_PTX")
+	@:native("AV_CODEC_ID_PTX")
 	final AV_CODEC_ID_PTX;
-	
-    @:native("AV_CODEC_ID_TXD")
+
+	@:native("AV_CODEC_ID_TXD")
 	final AV_CODEC_ID_TXD;
 
-    @:native("AV_CODEC_ID_VP6A")
+	@:native("AV_CODEC_ID_VP6A")
 	final AV_CODEC_ID_VP6A;
 
-    @:native("AV_CODEC_ID_AMV")
-    final AV_CODEC_ID_AMV;
-    
+	@:native("AV_CODEC_ID_AMV")
+	final AV_CODEC_ID_AMV;
+
 	@:native("AV_CODEC_ID_VB")
-    final AV_CODEC_ID_VB;
-    
+	final AV_CODEC_ID_VB;
+
 	@:native("AV_CODEC_ID_PCX")
-    final AV_CODEC_ID_PCX;
-    
+	final AV_CODEC_ID_PCX;
+
 	@:native("AV_CODEC_ID_SUNRAST")
-    final AV_CODEC_ID_SUNRAST;
-    
+	final AV_CODEC_ID_SUNRAST;
+
 	@:native("AV_CODEC_ID_INDEO4")
-    final AV_CODEC_ID_INDEO4;
-    
+	final AV_CODEC_ID_INDEO4;
+
 	@:native("AV_CODEC_ID_INDEO5")
-    final AV_CODEC_ID_INDEO5;
-    
+	final AV_CODEC_ID_INDEO5;
+
 	@:native("AV_CODEC_ID_MIMIC")
-    final AV_CODEC_ID_MIMIC;
-    
+	final AV_CODEC_ID_MIMIC;
+
 	@:native("AV_CODEC_ID_RL2")
-    final AV_CODEC_ID_RL2;
-    
+	final AV_CODEC_ID_RL2;
+
 	@:native("AV_CODEC_ID_ESCAPE124")
-    final AV_CODEC_ID_ESCAPE124;
-    
+	final AV_CODEC_ID_ESCAPE124;
+
 	@:native("AV_CODEC_ID_DIRAC")
-    final AV_CODEC_ID_DIRAC;
-    
+	final AV_CODEC_ID_DIRAC;
+
 	@:native("AV_CODEC_ID_BFI")
-    final AV_CODEC_ID_BFI;
-    
+	final AV_CODEC_ID_BFI;
+
 	@:native("AV_CODEC_ID_CMV")
-    final AV_CODEC_ID_CMV;
-    
+	final AV_CODEC_ID_CMV;
+
 	@:native("AV_CODEC_ID_MOTIONPIXELS")
-    final AV_CODEC_ID_MOTIONPIXELS;
-    
+	final AV_CODEC_ID_MOTIONPIXELS;
+
 	@:native("AV_CODEC_ID_TGV")
-    final AV_CODEC_ID_TGV;
-    
+	final AV_CODEC_ID_TGV;
+
 	@:native("AV_CODEC_ID_TGQ")
-    final AV_CODEC_ID_TGQ;
-    
+	final AV_CODEC_ID_TGQ;
+
 	@:native("AV_CODEC_ID_TQI")
-    final AV_CODEC_ID_TQI;
-    
+	final AV_CODEC_ID_TQI;
+
 	@:native("AV_CODEC_ID_AURA")
-    final AV_CODEC_ID_AURA;
-    
+	final AV_CODEC_ID_AURA;
+
 	@:native("AV_CODEC_ID_AURA2")
-    final AV_CODEC_ID_AURA2;
-    
+	final AV_CODEC_ID_AURA2;
+
 	@:native("AV_CODEC_ID_V210X")
-    final AV_CODEC_ID_V210X;
-    
+	final AV_CODEC_ID_V210X;
+
 	@:native("AV_CODEC_ID_TMV")
-    final AV_CODEC_ID_TMV;
-    
+	final AV_CODEC_ID_TMV;
+
 	@:native("AV_CODEC_ID_V210")
-    final AV_CODEC_ID_V210;
-    
+	final AV_CODEC_ID_V210;
+
 	@:native("AV_CODEC_ID_DPX")
-    final AV_CODEC_ID_DPX;
-    
+	final AV_CODEC_ID_DPX;
+
 	@:native("AV_CODEC_ID_MAD")
-    final AV_CODEC_ID_MAD;
-    
+	final AV_CODEC_ID_MAD;
+
 	@:native("AV_CODEC_ID_FRWU")
-    final AV_CODEC_ID_FRWU;
-    
+	final AV_CODEC_ID_FRWU;
+
 	@:native("AV_CODEC_ID_FLASHSV2")
-    final AV_CODEC_ID_FLASHSV2;
-    
+	final AV_CODEC_ID_FLASHSV2;
+
 	@:native("AV_CODEC_ID_CDGRAPHICS")
-    final AV_CODEC_ID_CDGRAPHICS;
-    
+	final AV_CODEC_ID_CDGRAPHICS;
+
 	@:native("AV_CODEC_ID_R210")
-    final AV_CODEC_ID_R210;
-    
+	final AV_CODEC_ID_R210;
+
 	@:native("AV_CODEC_ID_ANM")
-    final AV_CODEC_ID_ANM;
-    
+	final AV_CODEC_ID_ANM;
+
 	@:native("AV_CODEC_ID_BINKVIDEO")
-    final AV_CODEC_ID_BINKVIDEO;
-    
+	final AV_CODEC_ID_BINKVIDEO;
+
 	@:native("AV_CODEC_ID_IFF_ILBM")
-    final AV_CODEC_ID_IFF_ILBM;
+	final AV_CODEC_ID_IFF_ILBM;
 
 	@:native("AV_CODEC_ID_IFF_BYTERUN1")
-    final AV_CODEC_ID_IFF_BYTERUN1;	
-    
+	final AV_CODEC_ID_IFF_BYTERUN1;	
+
 	@:native("AV_CODEC_ID_KGV1")
-    final AV_CODEC_ID_KGV1;
-    
+	final AV_CODEC_ID_KGV1;
+
 	@:native("AV_CODEC_ID_YOP")
-    final AV_CODEC_ID_YOP;
-    
+	final AV_CODEC_ID_YOP;
+
 	@:native("AV_CODEC_ID_VP8")
-    final AV_CODEC_ID_VP8;
-    
+	final AV_CODEC_ID_VP8;
+
 	@:native("AV_CODEC_ID_PICTOR")
-    final AV_CODEC_ID_PICTOR;
-    
+	final AV_CODEC_ID_PICTOR;
+
 	@:native("AV_CODEC_ID_ANSI")
-    final AV_CODEC_ID_ANSI;
-    
+	final AV_CODEC_ID_ANSI;
+
 	@:native("AV_CODEC_ID_A64_MULTI")
-    final AV_CODEC_ID_A64_MULTI;
-    
+	final AV_CODEC_ID_A64_MULTI;
+
 	@:native("AV_CODEC_ID_A64_MULTI5")
-    final AV_CODEC_ID_A64_MULTI5;
-    
+	final AV_CODEC_ID_A64_MULTI5;
+
 	@:native("AV_CODEC_ID_R10K")
-    final AV_CODEC_ID_R10K;
-    
+	final AV_CODEC_ID_R10K;
+
 	@:native("AV_CODEC_ID_MXPEG")
-    final AV_CODEC_ID_MXPEG;
-    
+	final AV_CODEC_ID_MXPEG;
+
 	@:native("AV_CODEC_ID_LAGARITH")
-    final AV_CODEC_ID_LAGARITH;
-    
+	final AV_CODEC_ID_LAGARITH;
+
 	@:native("AV_CODEC_ID_PRORES")
-    final AV_CODEC_ID_PRORES;
-    
+	final AV_CODEC_ID_PRORES;
+
 	@:native("AV_CODEC_ID_JV")
-    final AV_CODEC_ID_JV;
-    
+	final AV_CODEC_ID_JV;
+
 	@:native("AV_CODEC_ID_DFA")
-    final AV_CODEC_ID_DFA;
-    
+	final AV_CODEC_ID_DFA;
+
 	@:native("AV_CODEC_ID_WMV3IMAGE")
-    final AV_CODEC_ID_WMV3IMAGE;
-    
+	final AV_CODEC_ID_WMV3IMAGE;
+
 	@:native("AV_CODEC_ID_VC1IMAGE")
-    final AV_CODEC_ID_VC1IMAGE;
-    
+	final AV_CODEC_ID_VC1IMAGE;
+
 	@:native("AV_CODEC_ID_UTVIDEO")
-    final AV_CODEC_ID_UTVIDEO;
-    
+	final AV_CODEC_ID_UTVIDEO;
+
 	@:native("AV_CODEC_ID_BMV_VIDEO")
-    final AV_CODEC_ID_BMV_VIDEO;
-    
+	final AV_CODEC_ID_BMV_VIDEO;
+
 	@:native("AV_CODEC_ID_VBLE")
-    final AV_CODEC_ID_VBLE;
-    
+	final AV_CODEC_ID_VBLE;
+
 	@:native("AV_CODEC_ID_DXTORY")
-    final AV_CODEC_ID_DXTORY;
-    
+	final AV_CODEC_ID_DXTORY;
+
 	@:native("AV_CODEC_ID_V410")
-    final AV_CODEC_ID_V410;
-    
+	final AV_CODEC_ID_V410;
+
 	@:native("AV_CODEC_ID_XWD")
-    final AV_CODEC_ID_XWD;
-    
+	final AV_CODEC_ID_XWD;
+
 	@:native("AV_CODEC_ID_CDXL")
-    final AV_CODEC_ID_CDXL;
-    
+	final AV_CODEC_ID_CDXL;
+
 	@:native("AV_CODEC_ID_XBM")
-    final AV_CODEC_ID_XBM;
-    
+	final AV_CODEC_ID_XBM;
+
 	@:native("AV_CODEC_ID_ZEROCODEC")
-    final AV_CODEC_ID_ZEROCODEC;
-    
+	final AV_CODEC_ID_ZEROCODEC;
+
 	@:native("AV_CODEC_ID_MSS1")
-    final AV_CODEC_ID_MSS1;
-    
+	final AV_CODEC_ID_MSS1;
+
 	@:native("AV_CODEC_ID_MSA1")
-    final AV_CODEC_ID_MSA1;
-    
+	final AV_CODEC_ID_MSA1;
+
 	@:native("AV_CODEC_ID_TSCC2")
-    final AV_CODEC_ID_TSCC2;
-    
+	final AV_CODEC_ID_TSCC2;
+
 	@:native("AV_CODEC_ID_MTS2")
-    final AV_CODEC_ID_MTS2;
-    
+	final AV_CODEC_ID_MTS2;
+
 	@:native("AV_CODEC_ID_CLLC")
-    final AV_CODEC_ID_CLLC;
-    
+	final AV_CODEC_ID_CLLC;
+
 	@:native("AV_CODEC_ID_MSS2")
-    final AV_CODEC_ID_MSS2;
-    
+	final AV_CODEC_ID_MSS2;
+
 	@:native("AV_CODEC_ID_VP9")
-    final AV_CODEC_ID_VP9;
-    
+	final AV_CODEC_ID_VP9;
+
 	@:native("AV_CODEC_ID_AIC")
-    final AV_CODEC_ID_AIC;
-    
+	final AV_CODEC_ID_AIC;
+
 	@:native("AV_CODEC_ID_ESCAPE130")
-    final AV_CODEC_ID_ESCAPE130;
-    
+	final AV_CODEC_ID_ESCAPE130;
+
 	@:native("AV_CODEC_ID_G2M")
-    final AV_CODEC_ID_G2M;
-    
+	final AV_CODEC_ID_G2M;
+
 	@:native("AV_CODEC_ID_WEBP")
-    final AV_CODEC_ID_WEBP;
-    
+	final AV_CODEC_ID_WEBP;
+
 	@:native("AV_CODEC_ID_HNM4_VIDEO")
-    final AV_CODEC_ID_HNM4_VIDEO;
-    
+	final AV_CODEC_ID_HNM4_VIDEO;
+
 	@:native("AV_CODEC_ID_HEVC")
-    final AV_CODEC_ID_HEVC;
+	final AV_CODEC_ID_HEVC;
 
 	@:native("AV_CODEC_ID_H265")
-    final AV_CODEC_ID_H265;
-    
+	final AV_CODEC_ID_H265;
+
 	@:native("AV_CODEC_ID_FIC")
-    final AV_CODEC_ID_FIC;
-    
+	final AV_CODEC_ID_FIC;
+
 	@:native("AV_CODEC_ID_ALIAS_PIX")
-    final AV_CODEC_ID_ALIAS_PIX;
-    
+	final AV_CODEC_ID_ALIAS_PIX;
+
 	@:native("AV_CODEC_ID_BRENDER_PIX")
-    final AV_CODEC_ID_BRENDER_PIX;
-    
+	final AV_CODEC_ID_BRENDER_PIX;
+
 	@:native("AV_CODEC_ID_PAF_VIDEO")
-    final AV_CODEC_ID_PAF_VIDEO;
-    
+	final AV_CODEC_ID_PAF_VIDEO;
+
 	@:native("AV_CODEC_ID_EXR")
-    final AV_CODEC_ID_EXR;
-    
+	final AV_CODEC_ID_EXR;
+
 	@:native("AV_CODEC_ID_VP7")
-    final AV_CODEC_ID_VP7;
-    
+	final AV_CODEC_ID_VP7;
+
 	@:native("AV_CODEC_ID_SANM")
-    final AV_CODEC_ID_SANM;
-    
+	final AV_CODEC_ID_SANM;
+
 	@:native("AV_CODEC_ID_SGIRLE")
-    final AV_CODEC_ID_SGIRLE;
-    
+	final AV_CODEC_ID_SGIRLE;
+
 	@:native("AV_CODEC_ID_MVC1")
-    final AV_CODEC_ID_MVC1;
-    
+	final AV_CODEC_ID_MVC1;
+
 	@:native("AV_CODEC_ID_MVC2")
-    final AV_CODEC_ID_MVC2;
-    
+	final AV_CODEC_ID_MVC2;
+
 	@:native("AV_CODEC_ID_HQX")
-    final AV_CODEC_ID_HQX;
-    
+	final AV_CODEC_ID_HQX;
+
 	@:native("AV_CODEC_ID_TDSC")
-    final AV_CODEC_ID_TDSC;
-    
+	final AV_CODEC_ID_TDSC;
+
 	@:native("AV_CODEC_ID_HQ_HQA")
-    final AV_CODEC_ID_HQ_HQA;
-    
+	final AV_CODEC_ID_HQ_HQA;
+
 	@:native("AV_CODEC_ID_HAP")
-    final AV_CODEC_ID_HAP;
-    
+	final AV_CODEC_ID_HAP;
+
 	@:native("AV_CODEC_ID_DDS")
-    final AV_CODEC_ID_DDS;
-    
+	final AV_CODEC_ID_DDS;
+
 	@:native("AV_CODEC_ID_DXV")
-    final AV_CODEC_ID_DXV;
-    
+	final AV_CODEC_ID_DXV;
+
 	@:native("AV_CODEC_ID_SCREENPRESSO")
-    final AV_CODEC_ID_SCREENPRESSO;
-    
+	final AV_CODEC_ID_SCREENPRESSO;
+
 	@:native("AV_CODEC_ID_RSCC")
-    final AV_CODEC_ID_RSCC;
-    
+	final AV_CODEC_ID_RSCC;
+
 	@:native("AV_CODEC_ID_AVS2")
-    final AV_CODEC_ID_AVS2;
+	final AV_CODEC_ID_AVS2;
 
 	@:native("AV_CODEC_ID_Y41P")
-    final AV_CODEC_ID_Y41P;
+	final AV_CODEC_ID_Y41P;
 
-    @:native("AV_CODEC_ID_AVRP")
-    final AV_CODEC_ID_AVRP;
+	@:native("AV_CODEC_ID_AVRP")
+	final AV_CODEC_ID_AVRP;
 
-    @:native("AV_CODEC_ID_012V")
-    final AV_CODEC_ID_012V;
+	@:native("AV_CODEC_ID_012V")
+	final AV_CODEC_ID_012V;
 
-    @:native("AV_CODEC_ID_AVUI")
-    final AV_CODEC_ID_AVUI;
+	@:native("AV_CODEC_ID_AVUI")
+	final AV_CODEC_ID_AVUI;
 
-    @:native("AV_CODEC_ID_AYUV")
-    final AV_CODEC_ID_AYUV;
+	@:native("AV_CODEC_ID_AYUV")
+	final AV_CODEC_ID_AYUV;
 
-    @:native("AV_CODEC_ID_TARGA_Y216")
-    final AV_CODEC_ID_TARGA_Y216;
+	@:native("AV_CODEC_ID_TARGA_Y216")
+	final AV_CODEC_ID_TARGA_Y216;
 
-    @:native("AV_CODEC_ID_V308")
-    final AV_CODEC_ID_V308;
+	@:native("AV_CODEC_ID_V308")
+	final AV_CODEC_ID_V308;
 
-    @:native("AV_CODEC_ID_V408")
-    final AV_CODEC_ID_V408;
+	@:native("AV_CODEC_ID_V408")
+	final AV_CODEC_ID_V408;
 
-    @:native("AV_CODEC_ID_YUV4")
-    final AV_CODEC_ID_YUV4;
+	@:native("AV_CODEC_ID_YUV4")
+	final AV_CODEC_ID_YUV4;
 
-    @:native("AV_CODEC_ID_AVRN")
-    final AV_CODEC_ID_AVRN;
+	@:native("AV_CODEC_ID_AVRN")
+	final AV_CODEC_ID_AVRN;
 
-    @:native("AV_CODEC_ID_CPIA")
-    final AV_CODEC_ID_CPIA;
+	@:native("AV_CODEC_ID_CPIA")
+	final AV_CODEC_ID_CPIA;
 
-    @:native("AV_CODEC_ID_XFACE")
-    final AV_CODEC_ID_XFACE;
+	@:native("AV_CODEC_ID_XFACE")
+	final AV_CODEC_ID_XFACE;
 
-    @:native("AV_CODEC_ID_SNOW")
-    final AV_CODEC_ID_SNOW;
+	@:native("AV_CODEC_ID_SNOW")
+	final AV_CODEC_ID_SNOW;
 
-    @:native("AV_CODEC_ID_SMVJPEG")
-    final AV_CODEC_ID_SMVJPEG;
+	@:native("AV_CODEC_ID_SMVJPEG")
+	final AV_CODEC_ID_SMVJPEG;
 
-    @:native("AV_CODEC_ID_APNG")
-    final AV_CODEC_ID_APNG;
+	@:native("AV_CODEC_ID_APNG")
+	final AV_CODEC_ID_APNG;
 
-    @:native("AV_CODEC_ID_DAALA")
-    final AV_CODEC_ID_DAALA;
+	@:native("AV_CODEC_ID_DAALA")
+	final AV_CODEC_ID_DAALA;
 
-    @:native("AV_CODEC_ID_CFHD")
-    final AV_CODEC_ID_CFHD;
+	@:native("AV_CODEC_ID_CFHD")
+	final AV_CODEC_ID_CFHD;
 
-    @:native("AV_CODEC_ID_TRUEMOTION2RT")
-    final AV_CODEC_ID_TRUEMOTION2RT;
+	@:native("AV_CODEC_ID_TRUEMOTION2RT")
+	final AV_CODEC_ID_TRUEMOTION2RT;
 
-    @:native("AV_CODEC_ID_M101")
-    final AV_CODEC_ID_M101;
+	@:native("AV_CODEC_ID_M101")
+	final AV_CODEC_ID_M101;
 
-    @:native("AV_CODEC_ID_MAGICYUV")
-    final AV_CODEC_ID_MAGICYUV;
+	@:native("AV_CODEC_ID_MAGICYUV")
+	final AV_CODEC_ID_MAGICYUV;
 
-    @:native("AV_CODEC_ID_SHEERVIDEO")
-    final AV_CODEC_ID_SHEERVIDEO;
+	@:native("AV_CODEC_ID_SHEERVIDEO")
+	final AV_CODEC_ID_SHEERVIDEO;
 
-    @:native("AV_CODEC_ID_YLC")
-    final AV_CODEC_ID_YLC;
+	@:native("AV_CODEC_ID_YLC")
+	final AV_CODEC_ID_YLC;
 
-    @:native("AV_CODEC_ID_PSD")
-    final AV_CODEC_ID_PSD;
+	@:native("AV_CODEC_ID_PSD")
+	final AV_CODEC_ID_PSD;
 
-    @:native("AV_CODEC_ID_PIXLET")
-    final AV_CODEC_ID_PIXLET;
+	@:native("AV_CODEC_ID_PIXLET")
+	final AV_CODEC_ID_PIXLET;
 
-    @:native("AV_CODEC_ID_SPEEDHQ")
-    final AV_CODEC_ID_SPEEDHQ;
+	@:native("AV_CODEC_ID_SPEEDHQ")
+	final AV_CODEC_ID_SPEEDHQ;
 
-    @:native("AV_CODEC_ID_FMVC")
-    final AV_CODEC_ID_FMVC;
+	@:native("AV_CODEC_ID_FMVC")
+	final AV_CODEC_ID_FMVC;
 
-    @:native("AV_CODEC_ID_SCPR")
-    final AV_CODEC_ID_SCPR;
+	@:native("AV_CODEC_ID_SCPR")
+	final AV_CODEC_ID_SCPR;
 
-    @:native("AV_CODEC_ID_CLEARVIDEO")
-    final AV_CODEC_ID_CLEARVIDEO;
+	@:native("AV_CODEC_ID_CLEARVIDEO")
+	final AV_CODEC_ID_CLEARVIDEO;
 
-    @:native("AV_CODEC_ID_XPM")
-    final AV_CODEC_ID_XPM;
+	@:native("AV_CODEC_ID_XPM")
+	final AV_CODEC_ID_XPM;
 
-    @:native("AV_CODEC_ID_AV1")
-    final AV_CODEC_ID_AV1;
+	@:native("AV_CODEC_ID_AV1")
+	final AV_CODEC_ID_AV1;
 
-    @:native("AV_CODEC_ID_BITPACKED")
-    final AV_CODEC_ID_BITPACKED;
+	@:native("AV_CODEC_ID_BITPACKED")
+	final AV_CODEC_ID_BITPACKED;
 
-    @:native("AV_CODEC_ID_MSCC")
-    final AV_CODEC_ID_MSCC;
+	@:native("AV_CODEC_ID_MSCC")
+	final AV_CODEC_ID_MSCC;
 
-    @:native("AV_CODEC_ID_SRGC")
-    final AV_CODEC_ID_SRGC;
+	@:native("AV_CODEC_ID_SRGC")
+	final AV_CODEC_ID_SRGC;
 
-    @:native("AV_CODEC_ID_SVG")
-    final AV_CODEC_ID_SVG;
+	@:native("AV_CODEC_ID_SVG")
+	final AV_CODEC_ID_SVG;
 
-    @:native("AV_CODEC_ID_GDV")
-    final AV_CODEC_ID_GDV;
+	@:native("AV_CODEC_ID_GDV")
+	final AV_CODEC_ID_GDV;
 
-    @:native("AV_CODEC_ID_FITS")
-    final AV_CODEC_ID_FITS;
+	@:native("AV_CODEC_ID_FITS")
+	final AV_CODEC_ID_FITS;
 
-    @:native("AV_CODEC_ID_IMM4")
-    final AV_CODEC_ID_IMM4;
+	@:native("AV_CODEC_ID_IMM4")
+	final AV_CODEC_ID_IMM4;
 
-    @:native("AV_CODEC_ID_PROSUMER")
-    final AV_CODEC_ID_PROSUMER;
+	@:native("AV_CODEC_ID_PROSUMER")
+	final AV_CODEC_ID_PROSUMER;
 
-    @:native("AV_CODEC_ID_MWSC")
-    final AV_CODEC_ID_MWSC;
+	@:native("AV_CODEC_ID_MWSC")
+	final AV_CODEC_ID_MWSC;
 
-    @:native("AV_CODEC_ID_WCMV")
-    final AV_CODEC_ID_WCMV;
+	@:native("AV_CODEC_ID_WCMV")
+	final AV_CODEC_ID_WCMV;
 
-    @:native("AV_CODEC_ID_RASC")
-    final AV_CODEC_ID_RASC;
+	@:native("AV_CODEC_ID_RASC")
+	final AV_CODEC_ID_RASC;
 
-    @:native("AV_CODEC_ID_FIRST_AUDIO")
-    final AV_CODEC_ID_FIRST_AUDIO;	
+	@:native("AV_CODEC_ID_FIRST_AUDIO")
+	final AV_CODEC_ID_FIRST_AUDIO;	
 
-    @:native("AV_CODEC_ID_PCM_S16LE")
-    final AV_CODEC_ID_PCM_S16LE;	
+	@:native("AV_CODEC_ID_PCM_S16LE")
+	final AV_CODEC_ID_PCM_S16LE;	
 
-    @:native("AV_CODEC_ID_PCM_S16BE")
-    final AV_CODEC_ID_PCM_S16BE;
+	@:native("AV_CODEC_ID_PCM_S16BE")
+	final AV_CODEC_ID_PCM_S16BE;
 
-    @:native("AV_CODEC_ID_PCM_U16LE")
-    final AV_CODEC_ID_PCM_U16LE;
+	@:native("AV_CODEC_ID_PCM_U16LE")
+	final AV_CODEC_ID_PCM_U16LE;
 
-    @:native("AV_CODEC_ID_PCM_U16BE")
-    final AV_CODEC_ID_PCM_U16BE;
+	@:native("AV_CODEC_ID_PCM_U16BE")
+	final AV_CODEC_ID_PCM_U16BE;
 
-    @:native("AV_CODEC_ID_PCM_S8")
-    final AV_CODEC_ID_PCM_S8;
+	@:native("AV_CODEC_ID_PCM_S8")
+	final AV_CODEC_ID_PCM_S8;
 
-    @:native("AV_CODEC_ID_PCM_U8")
-    final AV_CODEC_ID_PCM_U8;
+	@:native("AV_CODEC_ID_PCM_U8")
+	final AV_CODEC_ID_PCM_U8;
 
-    @:native("AV_CODEC_ID_PCM_MULAW")
-    final AV_CODEC_ID_PCM_MULAW;
+	@:native("AV_CODEC_ID_PCM_MULAW")
+	final AV_CODEC_ID_PCM_MULAW;
 
-    @:native("AV_CODEC_ID_PCM_ALAW")
-    final AV_CODEC_ID_PCM_ALAW;
+	@:native("AV_CODEC_ID_PCM_ALAW")
+	final AV_CODEC_ID_PCM_ALAW;
 
-    @:native("AV_CODEC_ID_PCM_S32LE")
-    final AV_CODEC_ID_PCM_S32LE;
+	@:native("AV_CODEC_ID_PCM_S32LE")
+	final AV_CODEC_ID_PCM_S32LE;
 
-    @:native("AV_CODEC_ID_PCM_S32BE")
-    final AV_CODEC_ID_PCM_S32BE;
+	@:native("AV_CODEC_ID_PCM_S32BE")
+	final AV_CODEC_ID_PCM_S32BE;
 
-    @:native("AV_CODEC_ID_PCM_U32LE")
-    final AV_CODEC_ID_PCM_U32LE;
+	@:native("AV_CODEC_ID_PCM_U32LE")
+	final AV_CODEC_ID_PCM_U32LE;
 
-    @:native("AV_CODEC_ID_PCM_U32BE")
-    final AV_CODEC_ID_PCM_U32BE;
+	@:native("AV_CODEC_ID_PCM_U32BE")
+	final AV_CODEC_ID_PCM_U32BE;
 
-    @:native("AV_CODEC_ID_PCM_S24LE")
-    final AV_CODEC_ID_PCM_S24LE;
+	@:native("AV_CODEC_ID_PCM_S24LE")
+	final AV_CODEC_ID_PCM_S24LE;
 
-    @:native("AV_CODEC_ID_PCM_S24BE")
-    final AV_CODEC_ID_PCM_S24BE;
+	@:native("AV_CODEC_ID_PCM_S24BE")
+	final AV_CODEC_ID_PCM_S24BE;
 
-    @:native("AV_CODEC_ID_PCM_U24LE")
-    final AV_CODEC_ID_PCM_U24LE;
+	@:native("AV_CODEC_ID_PCM_U24LE")
+	final AV_CODEC_ID_PCM_U24LE;
 
-    @:native("AV_CODEC_ID_PCM_U24BE")
-    final AV_CODEC_ID_PCM_U24BE;
+	@:native("AV_CODEC_ID_PCM_U24BE")
+	final AV_CODEC_ID_PCM_U24BE;
 
-    @:native("AV_CODEC_ID_PCM_S24DAUD")
-    final AV_CODEC_ID_PCM_S24DAUD;
+	@:native("AV_CODEC_ID_PCM_S24DAUD")
+	final AV_CODEC_ID_PCM_S24DAUD;
 
-    @:native("AV_CODEC_ID_PCM_ZORK")
-    final AV_CODEC_ID_PCM_ZORK;
+	@:native("AV_CODEC_ID_PCM_ZORK")
+	final AV_CODEC_ID_PCM_ZORK;
 
-    @:native("AV_CODEC_ID_PCM_S16LE_PLANAR")
-    final AV_CODEC_ID_PCM_S16LE_PLANAR;
+	@:native("AV_CODEC_ID_PCM_S16LE_PLANAR")
+	final AV_CODEC_ID_PCM_S16LE_PLANAR;
 
-    @:native("AV_CODEC_ID_PCM_DVD")
-    final AV_CODEC_ID_PCM_DVD;
+	@:native("AV_CODEC_ID_PCM_DVD")
+	final AV_CODEC_ID_PCM_DVD;
 
-    @:native("AV_CODEC_ID_PCM_F32BE")
-    final AV_CODEC_ID_PCM_F32BE;
+	@:native("AV_CODEC_ID_PCM_F32BE")
+	final AV_CODEC_ID_PCM_F32BE;
 
-    @:native("AV_CODEC_ID_PCM_F32LE")
-    final AV_CODEC_ID_PCM_F32LE;
+	@:native("AV_CODEC_ID_PCM_F32LE")
+	final AV_CODEC_ID_PCM_F32LE;
 
-    @:native("AV_CODEC_ID_PCM_F64BE")
-    final AV_CODEC_ID_PCM_F64BE;
+	@:native("AV_CODEC_ID_PCM_F64BE")
+	final AV_CODEC_ID_PCM_F64BE;
 
-    @:native("AV_CODEC_ID_PCM_F64LE")
-    final AV_CODEC_ID_PCM_F64LE;
+	@:native("AV_CODEC_ID_PCM_F64LE")
+	final AV_CODEC_ID_PCM_F64LE;
 
-    @:native("AV_CODEC_ID_PCM_BLURAY")
-    final AV_CODEC_ID_PCM_BLURAY;
+	@:native("AV_CODEC_ID_PCM_BLURAY")
+	final AV_CODEC_ID_PCM_BLURAY;
 
-    @:native("AV_CODEC_ID_PCM_LXF")
-    final AV_CODEC_ID_PCM_LXF;
+	@:native("AV_CODEC_ID_PCM_LXF")
+	final AV_CODEC_ID_PCM_LXF;
 
-    @:native("AV_CODEC_ID_S302M")
-    final AV_CODEC_ID_S302M;
+	@:native("AV_CODEC_ID_S302M")
+	final AV_CODEC_ID_S302M;
 
-    @:native("AV_CODEC_ID_PCM_S8_PLANAR")
-    final AV_CODEC_ID_PCM_S8_PLANAR;
+	@:native("AV_CODEC_ID_PCM_S8_PLANAR")
+	final AV_CODEC_ID_PCM_S8_PLANAR;
 
-    @:native("AV_CODEC_ID_PCM_S24LE_PLANAR")
-    final AV_CODEC_ID_PCM_S24LE_PLANAR;
+	@:native("AV_CODEC_ID_PCM_S24LE_PLANAR")
+	final AV_CODEC_ID_PCM_S24LE_PLANAR;
 
-    @:native("AV_CODEC_ID_PCM_S32LE_PLANAR")
-    final AV_CODEC_ID_PCM_S32LE_PLANAR;
+	@:native("AV_CODEC_ID_PCM_S32LE_PLANAR")
+	final AV_CODEC_ID_PCM_S32LE_PLANAR;
 
-    @:native("AV_CODEC_ID_PCM_S16BE_PLANAR")
-    final AV_CODEC_ID_PCM_S16BE_PLANAR;
+	@:native("AV_CODEC_ID_PCM_S16BE_PLANAR")
+	final AV_CODEC_ID_PCM_S16BE_PLANAR;
 
-    @:native("AV_CODEC_ID_PCM_S64LE")
-    final AV_CODEC_ID_PCM_S64LE;	
+	@:native("AV_CODEC_ID_PCM_S64LE")
+	final AV_CODEC_ID_PCM_S64LE;	
 
-    @:native("AV_CODEC_ID_PCM_S64BE")
-    final AV_CODEC_ID_PCM_S64BE;
+	@:native("AV_CODEC_ID_PCM_S64BE")
+	final AV_CODEC_ID_PCM_S64BE;
 
-    @:native("AV_CODEC_ID_PCM_F16LE")
-    final AV_CODEC_ID_PCM_F16LE;
+	@:native("AV_CODEC_ID_PCM_F16LE")
+	final AV_CODEC_ID_PCM_F16LE;
 
-    @:native("AV_CODEC_ID_PCM_F24LE")
-    final AV_CODEC_ID_PCM_F24LE;
+	@:native("AV_CODEC_ID_PCM_F24LE")
+	final AV_CODEC_ID_PCM_F24LE;
 
-    @:native("AV_CODEC_ID_PCM_VIDC")
-    final AV_CODEC_ID_PCM_VIDC;
+	@:native("AV_CODEC_ID_PCM_VIDC")
+	final AV_CODEC_ID_PCM_VIDC;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_QT")
-    final AV_CODEC_ID_ADPCM_IMA_QT;
+	@:native("AV_CODEC_ID_ADPCM_IMA_QT")
+	final AV_CODEC_ID_ADPCM_IMA_QT;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_WAV")
-    final AV_CODEC_ID_ADPCM_IMA_WAV;
+	@:native("AV_CODEC_ID_ADPCM_IMA_WAV")
+	final AV_CODEC_ID_ADPCM_IMA_WAV;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_DK3")
-    final AV_CODEC_ID_ADPCM_IMA_DK3;
+	@:native("AV_CODEC_ID_ADPCM_IMA_DK3")
+	final AV_CODEC_ID_ADPCM_IMA_DK3;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_DK4")
-    final AV_CODEC_ID_ADPCM_IMA_DK4;
+	@:native("AV_CODEC_ID_ADPCM_IMA_DK4")
+	final AV_CODEC_ID_ADPCM_IMA_DK4;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_WS")
-    final AV_CODEC_ID_ADPCM_IMA_WS;
+	@:native("AV_CODEC_ID_ADPCM_IMA_WS")
+	final AV_CODEC_ID_ADPCM_IMA_WS;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_SMJPEG")
-    final AV_CODEC_ID_ADPCM_IMA_SMJPEG;
+	@:native("AV_CODEC_ID_ADPCM_IMA_SMJPEG")
+	final AV_CODEC_ID_ADPCM_IMA_SMJPEG;
 
-    @:native("AV_CODEC_ID_ADPCM_MS")
-    final AV_CODEC_ID_ADPCM_MS;
+	@:native("AV_CODEC_ID_ADPCM_MS")
+	final AV_CODEC_ID_ADPCM_MS;
 
-    @:native("AV_CODEC_ID_ADPCM_4XM")
-    final AV_CODEC_ID_ADPCM_4XM;
+	@:native("AV_CODEC_ID_ADPCM_4XM")
+	final AV_CODEC_ID_ADPCM_4XM;
 
-    @:native("AV_CODEC_ID_ADPCM_XA")
-    final AV_CODEC_ID_ADPCM_XA;
+	@:native("AV_CODEC_ID_ADPCM_XA")
+	final AV_CODEC_ID_ADPCM_XA;
 
-    @:native("AV_CODEC_ID_ADPCM_ADX")
-    final AV_CODEC_ID_ADPCM_ADX;
+	@:native("AV_CODEC_ID_ADPCM_ADX")
+	final AV_CODEC_ID_ADPCM_ADX;
 
-    @:native("AV_CODEC_ID_ADPCM_EA")
-    final AV_CODEC_ID_ADPCM_EA;
+	@:native("AV_CODEC_ID_ADPCM_EA")
+	final AV_CODEC_ID_ADPCM_EA;
 
-    @:native("AV_CODEC_ID_ADPCM_G726")
-    final AV_CODEC_ID_ADPCM_G726;
+	@:native("AV_CODEC_ID_ADPCM_G726")
+	final AV_CODEC_ID_ADPCM_G726;
 
-    @:native("AV_CODEC_ID_ADPCM_CT")
-    final AV_CODEC_ID_ADPCM_CT;
+	@:native("AV_CODEC_ID_ADPCM_CT")
+	final AV_CODEC_ID_ADPCM_CT;
 
-    @:native("AV_CODEC_ID_ADPCM_SWF")
-    final AV_CODEC_ID_ADPCM_SWF;
+	@:native("AV_CODEC_ID_ADPCM_SWF")
+	final AV_CODEC_ID_ADPCM_SWF;
 
-    @:native("AV_CODEC_ID_ADPCM_YAMAHA")
-    final AV_CODEC_ID_ADPCM_YAMAHA;
+	@:native("AV_CODEC_ID_ADPCM_YAMAHA")
+	final AV_CODEC_ID_ADPCM_YAMAHA;
 
-    @:native("AV_CODEC_ID_ADPCM_SBPRO_4")
-    final AV_CODEC_ID_ADPCM_SBPRO_4;
+	@:native("AV_CODEC_ID_ADPCM_SBPRO_4")
+	final AV_CODEC_ID_ADPCM_SBPRO_4;
 
-    @:native("AV_CODEC_ID_ADPCM_SBPRO_3")
-    final AV_CODEC_ID_ADPCM_SBPRO_3;
+	@:native("AV_CODEC_ID_ADPCM_SBPRO_3")
+	final AV_CODEC_ID_ADPCM_SBPRO_3;
 
-    @:native("AV_CODEC_ID_ADPCM_SBPRO_2")
-    final AV_CODEC_ID_ADPCM_SBPRO_2;
+	@:native("AV_CODEC_ID_ADPCM_SBPRO_2")
+	final AV_CODEC_ID_ADPCM_SBPRO_2;
 
-    @:native("AV_CODEC_ID_ADPCM_THP")
-    final AV_CODEC_ID_ADPCM_THP;
+	@:native("AV_CODEC_ID_ADPCM_THP")
+	final AV_CODEC_ID_ADPCM_THP;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_AMV")
-    final AV_CODEC_ID_ADPCM_IMA_AMV;
+	@:native("AV_CODEC_ID_ADPCM_IMA_AMV")
+	final AV_CODEC_ID_ADPCM_IMA_AMV;
 
-    @:native("AV_CODEC_ID_ADPCM_EA_R1")
-    final AV_CODEC_ID_ADPCM_EA_R1;
+	@:native("AV_CODEC_ID_ADPCM_EA_R1")
+	final AV_CODEC_ID_ADPCM_EA_R1;
 
-    @:native("AV_CODEC_ID_ADPCM_EA_R3")
-    final AV_CODEC_ID_ADPCM_EA_R3;
+	@:native("AV_CODEC_ID_ADPCM_EA_R3")
+	final AV_CODEC_ID_ADPCM_EA_R3;
 
-    @:native("AV_CODEC_ID_ADPCM_EA_R2")
-    final AV_CODEC_ID_ADPCM_EA_R2;
+	@:native("AV_CODEC_ID_ADPCM_EA_R2")
+	final AV_CODEC_ID_ADPCM_EA_R2;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_EA_SEAD")
-    final AV_CODEC_ID_ADPCM_IMA_EA_SEAD;
+	@:native("AV_CODEC_ID_ADPCM_IMA_EA_SEAD")
+	final AV_CODEC_ID_ADPCM_IMA_EA_SEAD;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_EA_EACS")
-    final AV_CODEC_ID_ADPCM_IMA_EA_EACS;
+	@:native("AV_CODEC_ID_ADPCM_IMA_EA_EACS")
+	final AV_CODEC_ID_ADPCM_IMA_EA_EACS;
 
-    @:native("AV_CODEC_ID_ADPCM_EA_XAS")
-    final AV_CODEC_ID_ADPCM_EA_XAS;
+	@:native("AV_CODEC_ID_ADPCM_EA_XAS")
+	final AV_CODEC_ID_ADPCM_EA_XAS;
 
-    @:native("AV_CODEC_ID_ADPCM_EA_MAXIS_XA")
-    final AV_CODEC_ID_ADPCM_EA_MAXIS_XA;
+	@:native("AV_CODEC_ID_ADPCM_EA_MAXIS_XA")
+	final AV_CODEC_ID_ADPCM_EA_MAXIS_XA;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_ISS")
-    final AV_CODEC_ID_ADPCM_IMA_ISS;
+	@:native("AV_CODEC_ID_ADPCM_IMA_ISS")
+	final AV_CODEC_ID_ADPCM_IMA_ISS;
 
-    @:native("AV_CODEC_ID_ADPCM_G722")
-    final AV_CODEC_ID_ADPCM_G722;
+	@:native("AV_CODEC_ID_ADPCM_G722")
+	final AV_CODEC_ID_ADPCM_G722;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_APC")
-    final AV_CODEC_ID_ADPCM_IMA_APC;
+	@:native("AV_CODEC_ID_ADPCM_IMA_APC")
+	final AV_CODEC_ID_ADPCM_IMA_APC;
 
-    @:native("AV_CODEC_ID_ADPCM_VIMA")
-    final AV_CODEC_ID_ADPCM_VIMA;
+	@:native("AV_CODEC_ID_ADPCM_VIMA")
+	final AV_CODEC_ID_ADPCM_VIMA;
 
-    @:native("AV_CODEC_ID_ADPCM_AFC")
-    final AV_CODEC_ID_ADPCM_AFC;
+	@:native("AV_CODEC_ID_ADPCM_AFC")
+	final AV_CODEC_ID_ADPCM_AFC;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_OKI")
-    final AV_CODEC_ID_ADPCM_IMA_OKI;
+	@:native("AV_CODEC_ID_ADPCM_IMA_OKI")
+	final AV_CODEC_ID_ADPCM_IMA_OKI;
 
-    @:native("AV_CODEC_ID_ADPCM_DTK")
-    final AV_CODEC_ID_ADPCM_DTK;
+	@:native("AV_CODEC_ID_ADPCM_DTK")
+	final AV_CODEC_ID_ADPCM_DTK;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_RAD")
-    final AV_CODEC_ID_ADPCM_IMA_RAD;
+	@:native("AV_CODEC_ID_ADPCM_IMA_RAD")
+	final AV_CODEC_ID_ADPCM_IMA_RAD;
 
-    @:native("AV_CODEC_ID_ADPCM_G726LE")
-    final AV_CODEC_ID_ADPCM_G726LE;
+	@:native("AV_CODEC_ID_ADPCM_G726LE")
+	final AV_CODEC_ID_ADPCM_G726LE;
 
-    @:native("AV_CODEC_ID_ADPCM_THP_LE")
-    final AV_CODEC_ID_ADPCM_THP_LE;
+	@:native("AV_CODEC_ID_ADPCM_THP_LE")
+	final AV_CODEC_ID_ADPCM_THP_LE;
 
-    @:native("AV_CODEC_ID_ADPCM_PSX")
-    final AV_CODEC_ID_ADPCM_PSX;
+	@:native("AV_CODEC_ID_ADPCM_PSX")
+	final AV_CODEC_ID_ADPCM_PSX;
 
-    @:native("AV_CODEC_ID_ADPCM_AICA")
-    final AV_CODEC_ID_ADPCM_AICA;
+	@:native("AV_CODEC_ID_ADPCM_AICA")
+	final AV_CODEC_ID_ADPCM_AICA;
 
-    @:native("AV_CODEC_ID_ADPCM_IMA_DAT4")
-    final AV_CODEC_ID_ADPCM_IMA_DAT4;
+	@:native("AV_CODEC_ID_ADPCM_IMA_DAT4")
+	final AV_CODEC_ID_ADPCM_IMA_DAT4;
 
-    @:native("AV_CODEC_ID_ADPCM_MTAF")
-    final AV_CODEC_ID_ADPCM_MTAF;
+	@:native("AV_CODEC_ID_ADPCM_MTAF")
+	final AV_CODEC_ID_ADPCM_MTAF;
 
-    @:native("AV_CODEC_ID_AMR_NB")
-    final AV_CODEC_ID_AMR_NB;	
+	@:native("AV_CODEC_ID_AMR_NB")
+	final AV_CODEC_ID_AMR_NB;	
 
-    @:native("AV_CODEC_ID_AMR_WB")
-    final AV_CODEC_ID_AMR_WB;
+	@:native("AV_CODEC_ID_AMR_WB")
+	final AV_CODEC_ID_AMR_WB;
 
-    @:native("AV_CODEC_ID_RA_144")
-    final AV_CODEC_ID_RA_144;	
+	@:native("AV_CODEC_ID_RA_144")
+	final AV_CODEC_ID_RA_144;	
 
-    @:native("AV_CODEC_ID_RA_288")
-    final AV_CODEC_ID_RA_288;
+	@:native("AV_CODEC_ID_RA_288")
+	final AV_CODEC_ID_RA_288;
 
-    @:native("AV_CODEC_ID_ROQ_DPCM")
-    final AV_CODEC_ID_ROQ_DPCM;	
+	@:native("AV_CODEC_ID_ROQ_DPCM")
+	final AV_CODEC_ID_ROQ_DPCM;	
 
-    @:native("AV_CODEC_ID_INTERPLAY_DPCM")
-    final AV_CODEC_ID_INTERPLAY_DPCM;
+	@:native("AV_CODEC_ID_INTERPLAY_DPCM")
+	final AV_CODEC_ID_INTERPLAY_DPCM;
 
-    @:native("AV_CODEC_ID_XAN_DPCM")
-    final AV_CODEC_ID_XAN_DPCM;
+	@:native("AV_CODEC_ID_XAN_DPCM")
+	final AV_CODEC_ID_XAN_DPCM;
 
-    @:native("AV_CODEC_ID_SOL_DPCM")
-    final AV_CODEC_ID_SOL_DPCM;
+	@:native("AV_CODEC_ID_SOL_DPCM")
+	final AV_CODEC_ID_SOL_DPCM;
 
-    @:native("AV_CODEC_ID_SDX2_DPCM")
-    final AV_CODEC_ID_SDX2_DPCM;
+	@:native("AV_CODEC_ID_SDX2_DPCM")
+	final AV_CODEC_ID_SDX2_DPCM;
 
-    @:native("AV_CODEC_ID_GREMLIN_DPCM")
-    final AV_CODEC_ID_GREMLIN_DPCM;
+	@:native("AV_CODEC_ID_GREMLIN_DPCM")
+	final AV_CODEC_ID_GREMLIN_DPCM;
 
-    @:native("AV_CODEC_ID_MP2")
-    final AV_CODEC_ID_MP2;
+	@:native("AV_CODEC_ID_MP2")
+	final AV_CODEC_ID_MP2;
 
-    @:native("AV_CODEC_ID_MP3")
-    final AV_CODEC_ID_MP3;
+	@:native("AV_CODEC_ID_MP3")
+	final AV_CODEC_ID_MP3;
 
-    @:native("AV_CODEC_ID_AAC")
-    final AV_CODEC_ID_AAC;
+	@:native("AV_CODEC_ID_AAC")
+	final AV_CODEC_ID_AAC;
 
-    @:native("AV_CODEC_ID_AC3")
-    final AV_CODEC_ID_AC3;
+	@:native("AV_CODEC_ID_AC3")
+	final AV_CODEC_ID_AC3;
 
-    @:native("AV_CODEC_ID_DTS")
-    final AV_CODEC_ID_DTS;
+	@:native("AV_CODEC_ID_DTS")
+	final AV_CODEC_ID_DTS;
 
-    @:native("AV_CODEC_ID_VORBIS")
-    final AV_CODEC_ID_VORBIS;
+	@:native("AV_CODEC_ID_VORBIS")
+	final AV_CODEC_ID_VORBIS;
 
-    @:native("AV_CODEC_ID_DVAUDIO")
-    final AV_CODEC_ID_DVAUDIO;
+	@:native("AV_CODEC_ID_DVAUDIO")
+	final AV_CODEC_ID_DVAUDIO;
 
-    @:native("AV_CODEC_ID_WMAV1")
-    final AV_CODEC_ID_WMAV1;
+	@:native("AV_CODEC_ID_WMAV1")
+	final AV_CODEC_ID_WMAV1;
 
-    @:native("AV_CODEC_ID_WMAV2")
-    final AV_CODEC_ID_WMAV2;
+	@:native("AV_CODEC_ID_WMAV2")
+	final AV_CODEC_ID_WMAV2;
 
-    @:native("AV_CODEC_ID_MACE3")
-    final AV_CODEC_ID_MACE3;
+	@:native("AV_CODEC_ID_MACE3")
+	final AV_CODEC_ID_MACE3;
 
-    @:native("AV_CODEC_ID_MACE6")
-    final AV_CODEC_ID_MACE6;
+	@:native("AV_CODEC_ID_MACE6")
+	final AV_CODEC_ID_MACE6;
 
-    @:native("AV_CODEC_ID_VMDAUDIO")
-    final AV_CODEC_ID_VMDAUDIO;
+	@:native("AV_CODEC_ID_VMDAUDIO")
+	final AV_CODEC_ID_VMDAUDIO;
 
-    @:native("AV_CODEC_ID_FLAC")
-    final AV_CODEC_ID_FLAC;
+	@:native("AV_CODEC_ID_FLAC")
+	final AV_CODEC_ID_FLAC;
 
-    @:native("AV_CODEC_ID_MP3ADU")
-    final AV_CODEC_ID_MP3ADU;
+	@:native("AV_CODEC_ID_MP3ADU")
+	final AV_CODEC_ID_MP3ADU;
 
-    @:native("AV_CODEC_ID_MP3ON4")
-    final AV_CODEC_ID_MP3ON4;
+	@:native("AV_CODEC_ID_MP3ON4")
+	final AV_CODEC_ID_MP3ON4;
 
-    @:native("AV_CODEC_ID_SHORTEN")
-    final AV_CODEC_ID_SHORTEN;
+	@:native("AV_CODEC_ID_SHORTEN")
+	final AV_CODEC_ID_SHORTEN;
 
-    @:native("AV_CODEC_ID_ALAC")
-    final AV_CODEC_ID_ALAC;
+	@:native("AV_CODEC_ID_ALAC")
+	final AV_CODEC_ID_ALAC;
 
-    @:native("AV_CODEC_ID_WESTWOOD_SND1")
-    final AV_CODEC_ID_WESTWOOD_SND1;
+	@:native("AV_CODEC_ID_WESTWOOD_SND1")
+	final AV_CODEC_ID_WESTWOOD_SND1;
 
-    @:native("AV_CODEC_ID_GSM")
-    final AV_CODEC_ID_GSM;
+	@:native("AV_CODEC_ID_GSM")
+	final AV_CODEC_ID_GSM;
 
-    @:native("AV_CODEC_ID_QDM2")
-    final AV_CODEC_ID_QDM2;
+	@:native("AV_CODEC_ID_QDM2")
+	final AV_CODEC_ID_QDM2;
 
-    @:native("AV_CODEC_ID_COOK")
-    final AV_CODEC_ID_COOK;
+	@:native("AV_CODEC_ID_COOK")
+	final AV_CODEC_ID_COOK;
 
-    @:native("AV_CODEC_ID_TRUESPEECH")
-    final AV_CODEC_ID_TRUESPEECH;
+	@:native("AV_CODEC_ID_TRUESPEECH")
+	final AV_CODEC_ID_TRUESPEECH;
 
-    @:native("AV_CODEC_ID_TTA")
-    final AV_CODEC_ID_TTA;
+	@:native("AV_CODEC_ID_TTA")
+	final AV_CODEC_ID_TTA;
 
-    @:native("AV_CODEC_ID_SMACKAUDIO")
-    final AV_CODEC_ID_SMACKAUDIO;
+	@:native("AV_CODEC_ID_SMACKAUDIO")
+	final AV_CODEC_ID_SMACKAUDIO;
 
-    @:native("AV_CODEC_ID_QCELP")
-    final AV_CODEC_ID_QCELP;
+	@:native("AV_CODEC_ID_QCELP")
+	final AV_CODEC_ID_QCELP;
 
-    @:native("AV_CODEC_ID_WAVPACK")
-    final AV_CODEC_ID_WAVPACK;
+	@:native("AV_CODEC_ID_WAVPACK")
+	final AV_CODEC_ID_WAVPACK;
 
-    @:native("AV_CODEC_ID_DSICINAUDIO")
-    final AV_CODEC_ID_DSICINAUDIO;
+	@:native("AV_CODEC_ID_DSICINAUDIO")
+	final AV_CODEC_ID_DSICINAUDIO;
 
-    @:native("AV_CODEC_ID_IMC")
-    final AV_CODEC_ID_IMC;
+	@:native("AV_CODEC_ID_IMC")
+	final AV_CODEC_ID_IMC;
 
-    @:native("AV_CODEC_ID_MUSEPACK7")
-    final AV_CODEC_ID_MUSEPACK7;
+	@:native("AV_CODEC_ID_MUSEPACK7")
+	final AV_CODEC_ID_MUSEPACK7;
 
-    @:native("AV_CODEC_ID_MLP")
-    final AV_CODEC_ID_MLP;
+	@:native("AV_CODEC_ID_MLP")
+	final AV_CODEC_ID_MLP;
 
-    @:native("AV_CODEC_ID_GSM_MS")
-    final AV_CODEC_ID_GSM_MS;
+	@:native("AV_CODEC_ID_GSM_MS")
+	final AV_CODEC_ID_GSM_MS;
 
-    @:native("AV_CODEC_ID_ATRAC3")
-    final AV_CODEC_ID_ATRAC3;
+	@:native("AV_CODEC_ID_ATRAC3")
+	final AV_CODEC_ID_ATRAC3;
 
-    @:native("AV_CODEC_ID_APE")
-    final AV_CODEC_ID_APE;
+	@:native("AV_CODEC_ID_APE")
+	final AV_CODEC_ID_APE;
 
-    @:native("AV_CODEC_ID_NELLYMOSER")
-    final AV_CODEC_ID_NELLYMOSER;
+	@:native("AV_CODEC_ID_NELLYMOSER")
+	final AV_CODEC_ID_NELLYMOSER;
 
-    @:native("AV_CODEC_ID_MUSEPACK8")
-    final AV_CODEC_ID_MUSEPACK8;
+	@:native("AV_CODEC_ID_MUSEPACK8")
+	final AV_CODEC_ID_MUSEPACK8;
 
-    @:native("AV_CODEC_ID_SPEEX")
-    final AV_CODEC_ID_SPEEX;
+	@:native("AV_CODEC_ID_SPEEX")
+	final AV_CODEC_ID_SPEEX;
 
-    @:native("AV_CODEC_ID_WMAVOICE")
-    final AV_CODEC_ID_WMAVOICE;
+	@:native("AV_CODEC_ID_WMAVOICE")
+	final AV_CODEC_ID_WMAVOICE;
 
-    @:native("AV_CODEC_ID_WMAPRO")
-    final AV_CODEC_ID_WMAPRO;
+	@:native("AV_CODEC_ID_WMAPRO")
+	final AV_CODEC_ID_WMAPRO;
 
-    @:native("AV_CODEC_ID_WMALOSSLESS")
-    final AV_CODEC_ID_WMALOSSLESS;
+	@:native("AV_CODEC_ID_WMALOSSLESS")
+	final AV_CODEC_ID_WMALOSSLESS;
 
-    @:native("AV_CODEC_ID_ATRAC3P")
-    final AV_CODEC_ID_ATRAC3P;
+	@:native("AV_CODEC_ID_ATRAC3P")
+	final AV_CODEC_ID_ATRAC3P;
 
-    @:native("AV_CODEC_ID_EAC3")
-    final AV_CODEC_ID_EAC3;
+	@:native("AV_CODEC_ID_EAC3")
+	final AV_CODEC_ID_EAC3;
 
-    @:native("AV_CODEC_ID_SIPR")
-    final AV_CODEC_ID_SIPR;
+	@:native("AV_CODEC_ID_SIPR")
+	final AV_CODEC_ID_SIPR;
 
-    @:native("AV_CODEC_ID_MP1")
-    final AV_CODEC_ID_MP1;
+	@:native("AV_CODEC_ID_MP1")
+	final AV_CODEC_ID_MP1;
 
-    @:native("AV_CODEC_ID_TWINVQ")
-    final AV_CODEC_ID_TWINVQ;
+	@:native("AV_CODEC_ID_TWINVQ")
+	final AV_CODEC_ID_TWINVQ;
 
-    @:native("AV_CODEC_ID_TRUEHD")
-    final AV_CODEC_ID_TRUEHD;
+	@:native("AV_CODEC_ID_TRUEHD")
+	final AV_CODEC_ID_TRUEHD;
 
-    @:native("AV_CODEC_ID_MP4ALS")
-    final AV_CODEC_ID_MP4ALS;
+	@:native("AV_CODEC_ID_MP4ALS")
+	final AV_CODEC_ID_MP4ALS;
 
-    @:native("AV_CODEC_ID_ATRAC1")
-    final AV_CODEC_ID_ATRAC1;
+	@:native("AV_CODEC_ID_ATRAC1")
+	final AV_CODEC_ID_ATRAC1;
 
-    @:native("AV_CODEC_ID_BINKAUDIO_RDFT")
-    final AV_CODEC_ID_BINKAUDIO_RDFT;
+	@:native("AV_CODEC_ID_BINKAUDIO_RDFT")
+	final AV_CODEC_ID_BINKAUDIO_RDFT;
 
-    @:native("AV_CODEC_ID_BINKAUDIO_DCT")
-    final AV_CODEC_ID_BINKAUDIO_DCT;
+	@:native("AV_CODEC_ID_BINKAUDIO_DCT")
+	final AV_CODEC_ID_BINKAUDIO_DCT;
 
-    @:native("AV_CODEC_ID_AAC_LATM")
-    final AV_CODEC_ID_AAC_LATM;
+	@:native("AV_CODEC_ID_AAC_LATM")
+	final AV_CODEC_ID_AAC_LATM;
 
-    @:native("AV_CODEC_ID_QDMC")
-    final AV_CODEC_ID_QDMC;
+	@:native("AV_CODEC_ID_QDMC")
+	final AV_CODEC_ID_QDMC;
 
-    @:native("AV_CODEC_ID_CELT")
-    final AV_CODEC_ID_CELT;
+	@:native("AV_CODEC_ID_CELT")
+	final AV_CODEC_ID_CELT;
 
-    @:native("AV_CODEC_ID_G723_1")
-    final AV_CODEC_ID_G723_1;
+	@:native("AV_CODEC_ID_G723_1")
+	final AV_CODEC_ID_G723_1;
 
-    @:native("AV_CODEC_ID_G729")
-    final AV_CODEC_ID_G729;
+	@:native("AV_CODEC_ID_G729")
+	final AV_CODEC_ID_G729;
 
-    @:native("AV_CODEC_ID_8SVX_EXP")
-    final AV_CODEC_ID_8SVX_EXP;
+	@:native("AV_CODEC_ID_8SVX_EXP")
+	final AV_CODEC_ID_8SVX_EXP;
 
-    @:native("AV_CODEC_ID_8SVX_FIB")
-    final AV_CODEC_ID_8SVX_FIB;
+	@:native("AV_CODEC_ID_8SVX_FIB")
+	final AV_CODEC_ID_8SVX_FIB;
 
-    @:native("AV_CODEC_ID_BMV_AUDIO")
-    final AV_CODEC_ID_BMV_AUDIO;
+	@:native("AV_CODEC_ID_BMV_AUDIO")
+	final AV_CODEC_ID_BMV_AUDIO;
 
-    @:native("AV_CODEC_ID_RALF")
-    final AV_CODEC_ID_RALF;
+	@:native("AV_CODEC_ID_RALF")
+	final AV_CODEC_ID_RALF;
 
-    @:native("AV_CODEC_ID_IAC")
-    final AV_CODEC_ID_IAC;
+	@:native("AV_CODEC_ID_IAC")
+	final AV_CODEC_ID_IAC;
 
-    @:native("AV_CODEC_ID_ILBC")
-    final AV_CODEC_ID_ILBC;
+	@:native("AV_CODEC_ID_ILBC")
+	final AV_CODEC_ID_ILBC;
 
-    @:native("AV_CODEC_ID_OPUS")
-    final AV_CODEC_ID_OPUS;
+	@:native("AV_CODEC_ID_OPUS")
+	final AV_CODEC_ID_OPUS;
 
-    @:native("AV_CODEC_ID_COMFORT_NOISE")
-    final AV_CODEC_ID_COMFORT_NOISE;
+	@:native("AV_CODEC_ID_COMFORT_NOISE")
+	final AV_CODEC_ID_COMFORT_NOISE;
 
-    @:native("AV_CODEC_ID_TAK")
-    final AV_CODEC_ID_TAK;
+	@:native("AV_CODEC_ID_TAK")
+	final AV_CODEC_ID_TAK;
 
-    @:native("AV_CODEC_ID_METASOUND")
-    final AV_CODEC_ID_METASOUND;
+	@:native("AV_CODEC_ID_METASOUND")
+	final AV_CODEC_ID_METASOUND;
 
-    @:native("AV_CODEC_ID_PAF_AUDIO")
-    final AV_CODEC_ID_PAF_AUDIO;
+	@:native("AV_CODEC_ID_PAF_AUDIO")
+	final AV_CODEC_ID_PAF_AUDIO;
 
-    @:native("AV_CODEC_ID_ON2AVC")
-    final AV_CODEC_ID_ON2AVC;
+	@:native("AV_CODEC_ID_ON2AVC")
+	final AV_CODEC_ID_ON2AVC;
 
-    @:native("AV_CODEC_ID_DSS_SP")
-    final AV_CODEC_ID_DSS_SP;
+	@:native("AV_CODEC_ID_DSS_SP")
+	final AV_CODEC_ID_DSS_SP;
 
-    @:native("AV_CODEC_ID_CODEC2")
-    final AV_CODEC_ID_CODEC2;
+	@:native("AV_CODEC_ID_CODEC2")
+	final AV_CODEC_ID_CODEC2;
 
-    @:native("AV_CODEC_ID_FFWAVESYNTH")
-    final AV_CODEC_ID_FFWAVESYNTH;
+	@:native("AV_CODEC_ID_FFWAVESYNTH")
+	final AV_CODEC_ID_FFWAVESYNTH;
 
-    @:native("AV_CODEC_ID_SONIC")
-    final AV_CODEC_ID_SONIC;
+	@:native("AV_CODEC_ID_SONIC")
+	final AV_CODEC_ID_SONIC;
 
-    @:native("AV_CODEC_ID_SONIC_LS")
-    final AV_CODEC_ID_SONIC_LS;
+	@:native("AV_CODEC_ID_SONIC_LS")
+	final AV_CODEC_ID_SONIC_LS;
 
-    @:native("AV_CODEC_ID_EVRC")
-    final AV_CODEC_ID_EVRC;
+	@:native("AV_CODEC_ID_EVRC")
+	final AV_CODEC_ID_EVRC;
 
-    @:native("AV_CODEC_ID_SMV")
-    final AV_CODEC_ID_SMV;
+	@:native("AV_CODEC_ID_SMV")
+	final AV_CODEC_ID_SMV;
 
-    @:native("AV_CODEC_ID_DSD_LSBF")
-    final AV_CODEC_ID_DSD_LSBF;
+	@:native("AV_CODEC_ID_DSD_LSBF")
+	final AV_CODEC_ID_DSD_LSBF;
 
-    @:native("AV_CODEC_ID_DSD_MSBF")
-    final AV_CODEC_ID_DSD_MSBF;
+	@:native("AV_CODEC_ID_DSD_MSBF")
+	final AV_CODEC_ID_DSD_MSBF;
 
-    @:native("AV_CODEC_ID_DSD_LSBF_PLANAR")
-    final AV_CODEC_ID_DSD_LSBF_PLANAR;
+	@:native("AV_CODEC_ID_DSD_LSBF_PLANAR")
+	final AV_CODEC_ID_DSD_LSBF_PLANAR;
 
-    @:native("AV_CODEC_ID_DSD_MSBF_PLANAR")
-    final AV_CODEC_ID_DSD_MSBF_PLANAR;
+	@:native("AV_CODEC_ID_DSD_MSBF_PLANAR")
+	final AV_CODEC_ID_DSD_MSBF_PLANAR;
 
-    @:native("AV_CODEC_ID_4GV")
-    final AV_CODEC_ID_4GV;
+	@:native("AV_CODEC_ID_4GV")
+	final AV_CODEC_ID_4GV;
 
-    @:native("AV_CODEC_ID_INTERPLAY_ACM")
-    final AV_CODEC_ID_INTERPLAY_ACM;
+	@:native("AV_CODEC_ID_INTERPLAY_ACM")
+	final AV_CODEC_ID_INTERPLAY_ACM;
 
-    @:native("AV_CODEC_ID_XMA1")
-    final AV_CODEC_ID_XMA1;
+	@:native("AV_CODEC_ID_XMA1")
+	final AV_CODEC_ID_XMA1;
 
-    @:native("AV_CODEC_ID_XMA2")
-    final AV_CODEC_ID_XMA2;
+	@:native("AV_CODEC_ID_XMA2")
+	final AV_CODEC_ID_XMA2;
 
-    @:native("AV_CODEC_ID_DST")
-    final AV_CODEC_ID_DST;
+	@:native("AV_CODEC_ID_DST")
+	final AV_CODEC_ID_DST;
 
-    @:native("AV_CODEC_ID_ATRAC3AL")
-    final AV_CODEC_ID_ATRAC3AL;
+	@:native("AV_CODEC_ID_ATRAC3AL")
+	final AV_CODEC_ID_ATRAC3AL;
 
-    @:native("AV_CODEC_ID_ATRAC3PAL")
-    final AV_CODEC_ID_ATRAC3PAL;
+	@:native("AV_CODEC_ID_ATRAC3PAL")
+	final AV_CODEC_ID_ATRAC3PAL;
 
-    @:native("AV_CODEC_ID_DOLBY_E")
-    final AV_CODEC_ID_DOLBY_E;
+	@:native("AV_CODEC_ID_DOLBY_E")
+	final AV_CODEC_ID_DOLBY_E;
 
-    @:native("AV_CODEC_ID_APTX")
-    final AV_CODEC_ID_APTX;
+	@:native("AV_CODEC_ID_APTX")
+	final AV_CODEC_ID_APTX;
 
-    @:native("AV_CODEC_ID_APTX_HD")
-    final AV_CODEC_ID_APTX_HD;
+	@:native("AV_CODEC_ID_APTX_HD")
+	final AV_CODEC_ID_APTX_HD;
 
-    @:native("AV_CODEC_ID_SBC")
-    final AV_CODEC_ID_SBC;
+	@:native("AV_CODEC_ID_SBC")
+	final AV_CODEC_ID_SBC;
 
-    @:native("AV_CODEC_ID_ATRAC9")
-    final AV_CODEC_ID_ATRAC9;
+	@:native("AV_CODEC_ID_ATRAC9")
+	final AV_CODEC_ID_ATRAC9;
 
-    @:native("AV_CODEC_ID_FIRST_SUBTITLE")
-    final AV_CODEC_ID_FIRST_SUBTITLE;
+	@:native("AV_CODEC_ID_FIRST_SUBTITLE")
+	final AV_CODEC_ID_FIRST_SUBTITLE;
 
-    @:native("AV_CODEC_ID_DVD_SUBTITLE")
-    final AV_CODEC_ID_DVD_SUBTITLE;	
+	@:native("AV_CODEC_ID_DVD_SUBTITLE")
+	final AV_CODEC_ID_DVD_SUBTITLE;	
 
-    @:native("AV_CODEC_ID_DVB_SUBTITLE")
-    final AV_CODEC_ID_DVB_SUBTITLE;
+	@:native("AV_CODEC_ID_DVB_SUBTITLE")
+	final AV_CODEC_ID_DVB_SUBTITLE;
 
-    @:native("AV_CODEC_ID_TEXT")
-    final AV_CODEC_ID_TEXT;
+	@:native("AV_CODEC_ID_TEXT")
+	final AV_CODEC_ID_TEXT;
 
-    @:native("AV_CODEC_ID_XSUB")
-    final AV_CODEC_ID_XSUB;
+	@:native("AV_CODEC_ID_XSUB")
+	final AV_CODEC_ID_XSUB;
 
-    @:native("AV_CODEC_ID_SSA")
-    final AV_CODEC_ID_SSA;
+	@:native("AV_CODEC_ID_SSA")
+	final AV_CODEC_ID_SSA;
 
-    @:native("AV_CODEC_ID_MOV_TEXT")
-    final AV_CODEC_ID_MOV_TEXT;
+	@:native("AV_CODEC_ID_MOV_TEXT")
+	final AV_CODEC_ID_MOV_TEXT;
 
-    @:native("AV_CODEC_ID_HDMV_PGS_SUBTITLE")
-    final AV_CODEC_ID_HDMV_PGS_SUBTITLE;
+	@:native("AV_CODEC_ID_HDMV_PGS_SUBTITLE")
+	final AV_CODEC_ID_HDMV_PGS_SUBTITLE;
 
-    @:native("AV_CODEC_ID_DVB_TELETEXT")
-    final AV_CODEC_ID_DVB_TELETEXT;
+	@:native("AV_CODEC_ID_DVB_TELETEXT")
+	final AV_CODEC_ID_DVB_TELETEXT;
 
-    @:native("AV_CODEC_ID_SRT")
-    final AV_CODEC_ID_SRT;
+	@:native("AV_CODEC_ID_SRT")
+	final AV_CODEC_ID_SRT;
 
-    @:native("AV_CODEC_ID_MICRODVD")
-    final AV_CODEC_ID_MICRODVD;
+	@:native("AV_CODEC_ID_MICRODVD")
+	final AV_CODEC_ID_MICRODVD;
 
-    @:native("AV_CODEC_ID_EIA_608")
-    final AV_CODEC_ID_EIA_608;
+	@:native("AV_CODEC_ID_EIA_608")
+	final AV_CODEC_ID_EIA_608;
 
-    @:native("AV_CODEC_ID_JACOSUB")
-    final AV_CODEC_ID_JACOSUB;
+	@:native("AV_CODEC_ID_JACOSUB")
+	final AV_CODEC_ID_JACOSUB;
 
-    @:native("AV_CODEC_ID_SAMI")
-    final AV_CODEC_ID_SAMI;
+	@:native("AV_CODEC_ID_SAMI")
+	final AV_CODEC_ID_SAMI;
 
-    @:native("AV_CODEC_ID_REALTEXT")
-    final AV_CODEC_ID_REALTEXT;
+	@:native("AV_CODEC_ID_REALTEXT")
+	final AV_CODEC_ID_REALTEXT;
 
-    @:native("AV_CODEC_ID_STL")
-    final AV_CODEC_ID_STL;
+	@:native("AV_CODEC_ID_STL")
+	final AV_CODEC_ID_STL;
 
-    @:native("AV_CODEC_ID_SUBVIEWER1")
-    final AV_CODEC_ID_SUBVIEWER1;
+	@:native("AV_CODEC_ID_SUBVIEWER1")
+	final AV_CODEC_ID_SUBVIEWER1;
 
-    @:native("AV_CODEC_ID_SUBVIEWER")
-    final AV_CODEC_ID_SUBVIEWER;
+	@:native("AV_CODEC_ID_SUBVIEWER")
+	final AV_CODEC_ID_SUBVIEWER;
 
-    @:native("AV_CODEC_ID_SUBRIP")
-    final AV_CODEC_ID_SUBRIP;
+	@:native("AV_CODEC_ID_SUBRIP")
+	final AV_CODEC_ID_SUBRIP;
 
-    @:native("AV_CODEC_ID_WEBVTT")
-    final AV_CODEC_ID_WEBVTT;
+	@:native("AV_CODEC_ID_WEBVTT")
+	final AV_CODEC_ID_WEBVTT;
 
-    @:native("AV_CODEC_ID_MPL2")
-    final AV_CODEC_ID_MPL2;
+	@:native("AV_CODEC_ID_MPL2")
+	final AV_CODEC_ID_MPL2;
 
-    @:native("AV_CODEC_ID_VPLAYER")
-    final AV_CODEC_ID_VPLAYER;
+	@:native("AV_CODEC_ID_VPLAYER")
+	final AV_CODEC_ID_VPLAYER;
 
-    @:native("AV_CODEC_ID_PJS")
-    final AV_CODEC_ID_PJS;
+	@:native("AV_CODEC_ID_PJS")
+	final AV_CODEC_ID_PJS;
 
-    @:native("AV_CODEC_ID_ASS")
-    final AV_CODEC_ID_ASS;
+	@:native("AV_CODEC_ID_ASS")
+	final AV_CODEC_ID_ASS;
 
-    @:native("AV_CODEC_ID_HDMV_TEXT_SUBTITLE")
-    final AV_CODEC_ID_HDMV_TEXT_SUBTITLE;
+	@:native("AV_CODEC_ID_HDMV_TEXT_SUBTITLE")
+	final AV_CODEC_ID_HDMV_TEXT_SUBTITLE;
 
-    @:native("AV_CODEC_ID_TTML")
-    final AV_CODEC_ID_TTML;
+	@:native("AV_CODEC_ID_TTML")
+	final AV_CODEC_ID_TTML;
 
-    @:native("AV_CODEC_ID_FIRST_UNKNOWN")
-    final AV_CODEC_ID_FIRST_UNKNOWN;
+	@:native("AV_CODEC_ID_FIRST_UNKNOWN")
+	final AV_CODEC_ID_FIRST_UNKNOWN;
 
-    @:native("AV_CODEC_ID_TTF")
-    final AV_CODEC_ID_TTF;	
+	@:native("AV_CODEC_ID_TTF")
+	final AV_CODEC_ID_TTF;	
 
-    @:native("AV_CODEC_ID_SCTE_35")
-    final AV_CODEC_ID_SCTE_35;
+	@:native("AV_CODEC_ID_SCTE_35")
+	final AV_CODEC_ID_SCTE_35;
 
-    @:native("AV_CODEC_ID_BINTEXT")
-    final AV_CODEC_ID_BINTEXT;	
+	@:native("AV_CODEC_ID_BINTEXT")
+	final AV_CODEC_ID_BINTEXT;	
 
-    @:native("AV_CODEC_ID_XBIN")
-    final AV_CODEC_ID_XBIN;
+	@:native("AV_CODEC_ID_XBIN")
+	final AV_CODEC_ID_XBIN;
 
-    @:native("AV_CODEC_ID_IDF")
-    final AV_CODEC_ID_IDF;
+	@:native("AV_CODEC_ID_IDF")
+	final AV_CODEC_ID_IDF;
 
-    @:native("AV_CODEC_ID_OTF")
-    final AV_CODEC_ID_OTF;
+	@:native("AV_CODEC_ID_OTF")
+	final AV_CODEC_ID_OTF;
 
-    @:native("AV_CODEC_ID_SMPTE_KLV")
-    final AV_CODEC_ID_SMPTE_KLV;
+	@:native("AV_CODEC_ID_SMPTE_KLV")
+	final AV_CODEC_ID_SMPTE_KLV;
 
-    @:native("AV_CODEC_ID_DVD_NAV")
-    final AV_CODEC_ID_DVD_NAV;
+	@:native("AV_CODEC_ID_DVD_NAV")
+	final AV_CODEC_ID_DVD_NAV;
 
-    @:native("AV_CODEC_ID_TIMED_ID3")
-    final AV_CODEC_ID_TIMED_ID3;
+	@:native("AV_CODEC_ID_TIMED_ID3")
+	final AV_CODEC_ID_TIMED_ID3;
 
-    @:native("AV_CODEC_ID_BIN_DATA")
-    final AV_CODEC_ID_BIN_DATA;
+	@:native("AV_CODEC_ID_BIN_DATA")
+	final AV_CODEC_ID_BIN_DATA;
 
-    @:native("AV_CODEC_ID_PROBE")
-    final AV_CODEC_ID_PROBE;
+	@:native("AV_CODEC_ID_PROBE")
+	final AV_CODEC_ID_PROBE;
 
-    @:native("AV_CODEC_ID_MPEG2TS")
-    final AV_CODEC_ID_MPEG2TS;
+	@:native("AV_CODEC_ID_MPEG2TS")
+	final AV_CODEC_ID_MPEG2TS;
 
-    @:native("AV_CODEC_ID_MPEG4SYSTEMS")
-    final AV_CODEC_ID_MPEG4SYSTEMS;
+	@:native("AV_CODEC_ID_MPEG4SYSTEMS")
+	final AV_CODEC_ID_MPEG4SYSTEMS;
 
-    @:native("AV_CODEC_ID_FFMETADATA")
-    final AV_CODEC_ID_FFMETADATA;
+	@:native("AV_CODEC_ID_FFMETADATA")
+	final AV_CODEC_ID_FFMETADATA;
 
-    @:native("AV_CODEC_ID_WRAPPED_AVFRAME")
-    final AV_CODEC_ID_WRAPPED_AVFRAME;
+	@:native("AV_CODEC_ID_WRAPPED_AVFRAME")
+	final AV_CODEC_ID_WRAPPED_AVFRAME;
 }
 //---
 
@@ -1977,26 +1977,26 @@ extern class AVCodecIDImpl {}
 @:unreflective
 @:include("linc_ffmpeg.h")
 extern abstract AVMediaType(AVMediaTypeImpl) { 
-    @:native("AVMEDIA_TYPE_UNKNOWN")
-    final AVMEDIA_TYPE_UNKNOWN;
+	@:native("AVMEDIA_TYPE_UNKNOWN")
+	final AVMEDIA_TYPE_UNKNOWN;
 
-    @:native("AVMEDIA_TYPE_VIDEO")
-    final AVMEDIA_TYPE_VIDEO;
+	@:native("AVMEDIA_TYPE_VIDEO")
+	final AVMEDIA_TYPE_VIDEO;
 
-    @:native("AVMEDIA_TYPE_AUDIO")
-    final AVMEDIA_TYPE_AUDIO;
+	@:native("AVMEDIA_TYPE_AUDIO")
+	final AVMEDIA_TYPE_AUDIO;
 
-    @:native("AVMEDIA_TYPE_DATA")
-    final AVMEDIA_TYPE_DATA;
+	@:native("AVMEDIA_TYPE_DATA")
+	final AVMEDIA_TYPE_DATA;
 
-    @:native("AVMEDIA_TYPE_SUBTITLE")
-    final AVMEDIA_TYPE_SUBTITLE;
+	@:native("AVMEDIA_TYPE_SUBTITLE")
+	final AVMEDIA_TYPE_SUBTITLE;
 
-    @:native("AVMEDIA_TYPE_ATTACHMENT")
-    final AVMEDIA_TYPE_ATTACHMENT;
+	@:native("AVMEDIA_TYPE_ATTACHMENT")
+	final AVMEDIA_TYPE_ATTACHMENT;
 
-    @:native("AVMEDIA_TYPE_NB")	
-    final AVMEDIA_TYPE_NB;
+	@:native("AVMEDIA_TYPE_NB")	
+	final AVMEDIA_TYPE_NB;
 }
 //---
 
@@ -2009,47 +2009,47 @@ extern class AVMediaTypeImpl {}
 @:unreflective
 @:include("linc_ffmpeg.h")
 extern abstract AVSampleFormat(AVSampleFormatImpl) {
-    @:native("AV_SAMPLE_FMT_NONE")
-    final AV_SAMPLE_FMT_NONE;
+	@:native("AV_SAMPLE_FMT_NONE")
+	final AV_SAMPLE_FMT_NONE;
 
-    @:native("AV_SAMPLE_FMT_U8")
-    final AV_SAMPLE_FMT_U8;
+	@:native("AV_SAMPLE_FMT_U8")
+	final AV_SAMPLE_FMT_U8;
 
-    @:native("AV_SAMPLE_FMT_S16")
-    final AV_SAMPLE_FMT_S16;
+	@:native("AV_SAMPLE_FMT_S16")
+	final AV_SAMPLE_FMT_S16;
 
-    @:native("AV_SAMPLE_FMT_S32")
-    final AV_SAMPLE_FMT_S32;
+	@:native("AV_SAMPLE_FMT_S32")
+	final AV_SAMPLE_FMT_S32;
 
-    @:native("AV_SAMPLE_FMT_FLT")
-    final AV_SAMPLE_FMT_FLT;
+	@:native("AV_SAMPLE_FMT_FLT")
+	final AV_SAMPLE_FMT_FLT;
 
-    @:native("AV_SAMPLE_FMT_DBL")
-    final AV_SAMPLE_FMT_DBL;
+	@:native("AV_SAMPLE_FMT_DBL")
+	final AV_SAMPLE_FMT_DBL;
 
-    @:native("AV_SAMPLE_FMT_U8P")
-    final AV_SAMPLE_FMT_U8P;
+	@:native("AV_SAMPLE_FMT_U8P")
+	final AV_SAMPLE_FMT_U8P;
 
-    @:native("AV_SAMPLE_FMT_S16P")
-    final AV_SAMPLE_FMT_S16P;
+	@:native("AV_SAMPLE_FMT_S16P")
+	final AV_SAMPLE_FMT_S16P;
 
-    @:native("AV_SAMPLE_FMT_S32P")
-    final AV_SAMPLE_FMT_S32P;
+	@:native("AV_SAMPLE_FMT_S32P")
+	final AV_SAMPLE_FMT_S32P;
 
-    @:native("AV_SAMPLE_FMT_FLTP")
-    final AV_SAMPLE_FMT_FLTP;
+	@:native("AV_SAMPLE_FMT_FLTP")
+	final AV_SAMPLE_FMT_FLTP;
 
-    @:native("AV_SAMPLE_FMT_DBLP")
-    final AV_SAMPLE_FMT_DBLP;
+	@:native("AV_SAMPLE_FMT_DBLP")
+	final AV_SAMPLE_FMT_DBLP;
 
-    @:native("AV_SAMPLE_FMT_S64")
-    final AV_SAMPLE_FMT_S64;
+	@:native("AV_SAMPLE_FMT_S64")
+	final AV_SAMPLE_FMT_S64;
 
-    @:native("AV_SAMPLE_FMT_S64P")
-    final AV_SAMPLE_FMT_S64P;
+	@:native("AV_SAMPLE_FMT_S64P")
+	final AV_SAMPLE_FMT_S64P;
 
-    @:native("AV_SAMPLE_FMT_NB")
-    final AV_SAMPLE_FMT_NB;
+	@:native("AV_SAMPLE_FMT_NB")
+	final AV_SAMPLE_FMT_NB;
 }
 //---
 
@@ -2059,8 +2059,8 @@ extern class AVSampleFormatImpl {}
 //---
 
 /**
- * набор обычных дефайнов
- */
+* набор обычных дефайнов
+*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
@@ -2070,33 +2070,33 @@ extern abstract AVLog(Int32) from Int32 to Int32 {
 
 	@:native("AV_LOG_PANIC")
 	final AV_LOG_PANIC;
-	
+
 	@:native("AV_LOG_FATAL")	
 	final AV_LOG_FATAL;
-	
+
 	@:native("AV_LOG_ERROR")	
 	final AV_LOG_ERROR;
-	
+
 	@:native("AV_LOG_WARNING")	
 	final AV_LOG_WARNING;
-	
+
 	@:native("AV_LOG_INFO")	
 	final AV_LOG_INFO;
-	
+
 	@:native("AV_LOG_VERBOSE")	
 	final AV_LOG_VERBOSE;
-	
+
 	@:native("AV_LOG_DEBUG")	
 	final AV_LOG_DEBUG;
-	
+
 	@:native("AV_LOG_TRACE")	
 	final AV_LOG_TRACE;
 }
 //---
 
 /**
- * набор обычных дефайнов из error.h
- */
+* набор обычных дефайнов из error.h
+*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
@@ -2107,92 +2107,92 @@ extern abstract Error(Int32) from Int32 to Int32 {
 //---
 
 /**
- * набор обычных дефайнов
- */
+* набор обычных дефайнов
+*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
 extern abstract AVError(Int32) from Int32 to Int32 {
 	@:native("AVERROR_BSF_NOT_FOUND")
-    final AVERROR_BSF_NOT_FOUND;
+	final AVERROR_BSF_NOT_FOUND;
 
 	@:native("AVERROR_BUG")
-    final AVERROR_BUG;
+	final AVERROR_BUG;
 
 	@:native("AVERROR_BUFFER_TOO_SMALL")
-    final AVERROR_BUFFER_TOO_SMALL;
+	final AVERROR_BUFFER_TOO_SMALL;
 
 	@:native("AVERROR_DECODER_NOT_FOUND")
-    final AVERROR_DECODER_NOT_FOUND;
+	final AVERROR_DECODER_NOT_FOUND;
 
 	@:native("AVERROR_DEMUXER_NOT_FOUND")
-    final AVERROR_DEMUXER_NOT_FOUND;
+	final AVERROR_DEMUXER_NOT_FOUND;
 
 	@:native("AVERROR_ENCODER_NOT_FOUND")
-    final AVERROR_ENCODER_NOT_FOUND;
+	final AVERROR_ENCODER_NOT_FOUND;
 
 	@:native("AVERROR_EOF")
-    final AVERROR_EOF;
+	final AVERROR_EOF;
 
 	@:native("AVERROR_EXIT")
-    final AVERROR_EXIT;
+	final AVERROR_EXIT;
 
 	@:native("AVERROR_EXTERNAL")
-    final AVERROR_EXTERNAL;
+	final AVERROR_EXTERNAL;
 
 	@:native("AVERROR_FILTER_NOT_FOUND")
-    final AVERROR_FILTER_NOT_FOUND;
+	final AVERROR_FILTER_NOT_FOUND;
 
 	@:native("AVERROR_INVALIDDATA")
-    final AVERROR_INVALIDDATA;
+	final AVERROR_INVALIDDATA;
 
 	@:native("AVERROR_MUXER_NOT_FOUND")
-    final AVERROR_MUXER_NOT_FOUND;
+	final AVERROR_MUXER_NOT_FOUND;
 
 	@:native("AVERROR_OPTION_NOT_FOUND")
-    final AVERROR_OPTION_NOT_FOUND;
+	final AVERROR_OPTION_NOT_FOUND;
 
 	@:native("AVERROR_PATCHWELCOME")
-    final AVERROR_PATCHWELCOME;
+	final AVERROR_PATCHWELCOME;
 
 	@:native("AVERROR_PROTOCOL_NOT_FOUND")
-    final AVERROR_PROTOCOL_NOT_FOUND;
+	final AVERROR_PROTOCOL_NOT_FOUND;
 
 	@:native("AVERROR_STREAM_NOT_FOUND")
-    final AVERROR_STREAM_NOT_FOUND;
+	final AVERROR_STREAM_NOT_FOUND;
 
 	@:native("AVERROR_BUG2")
-    final AVERROR_BUG2;
+	final AVERROR_BUG2;
 
 	@:native("AVERROR_UNKNOWN")
-    final AVERROR_UNKNOWN;
+	final AVERROR_UNKNOWN;
 
 	@:native("AVERROR_EXPERIMENTAL")
-    final AVERROR_EXPERIMENTAL;
+	final AVERROR_EXPERIMENTAL;
 
 	@:native("AVERROR_INPUT_CHANGED")
-    final AVERROR_INPUT_CHANGED;
+	final AVERROR_INPUT_CHANGED;
 
 	@:native("AVERROR_OUTPUT_CHANGED")
-    final AVERROR_OUTPUT_CHANGED;
+	final AVERROR_OUTPUT_CHANGED;
 
 	@:native("AVERROR_HTTP_BAD_REQUEST")
-    final AVERROR_HTTP_BAD_REQUEST;
+	final AVERROR_HTTP_BAD_REQUEST;
 
 	@:native("AVERROR_HTTP_UNAUTHORIZED")
-    final AVERROR_HTTP_UNAUTHORIZED;
+	final AVERROR_HTTP_UNAUTHORIZED;
 
 	@:native("AVERROR_HTTP_FORBIDDEN")
-    final AVERROR_HTTP_FORBIDDEN;
+	final AVERROR_HTTP_FORBIDDEN;
 
 	@:native("AVERROR_HTTP_NOT_FOUND")
-    final AVERROR_HTTP_NOT_FOUND;
+	final AVERROR_HTTP_NOT_FOUND;
 
 	@:native("AVERROR_HTTP_OTHER_4XX")
-    final AVERROR_HTTP_OTHER_4XX;
+	final AVERROR_HTTP_OTHER_4XX;
 
 	@:native("AVERROR_HTTP_SERVER_ERROR")
-    final AVERROR_HTTP_SERVER_ERROR;
+	final AVERROR_HTTP_SERVER_ERROR;
 
 	@:native("AV_ERROR_MAX_STRING_SIZE")
 	final AV_ERROR_MAX_STRING_SIZE;
@@ -2200,113 +2200,113 @@ extern abstract AVError(Int32) from Int32 to Int32 {
 //---
 
 /**
- * набор обычных дефайнов
- */
+* набор обычных дефайнов
+*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
 extern abstract SWSFlag(Int32) from Int32 to Int32 {
 	@:native("SWS_FAST_BILINEAR")
-    final SWS_FAST_BILINEAR;
+	final SWS_FAST_BILINEAR;
 
 	@:native("SWS_BILINEAR")
-    final SWS_BILINEAR;
+	final SWS_BILINEAR;
 
 	@:native("SWS_BICUBIC")
-    final SWS_BICUBIC;
+	final SWS_BICUBIC;
 
 	@:native("SWS_X")
-    final SWS_X;
+	final SWS_X;
 
 	@:native("SWS_POINT")
-    final SWS_POINT;
+	final SWS_POINT;
 
 	@:native("SWS_AREA")
-    final SWS_AREA;
+	final SWS_AREA;
 
 	@:native("SWS_BICUBLIN")
-    final SWS_BICUBLIN;
+	final SWS_BICUBLIN;
 
 	@:native("SWS_GAUSS")
-    final SWS_GAUSS;
+	final SWS_GAUSS;
 
 	@:native("SWS_SINC")
-    final SWS_SINC;
+	final SWS_SINC;
 
 	@:native("SWS_LANCZOS")
-    final SWS_LANCZOS;
+	final SWS_LANCZOS;
 
 	@:native("SWS_SPLINE")
-    final SWS_SPLINE;
+	final SWS_SPLINE;
 
 	@:native("SWS_SRC_V_CHR_DROP_MASK")
-    final SWS_SRC_V_CHR_DROP_MASK;
+	final SWS_SRC_V_CHR_DROP_MASK;
 
 	@:native("SWS_SRC_V_CHR_DROP_SHIFT")
-    final SWS_SRC_V_CHR_DROP_SHIFT;
+	final SWS_SRC_V_CHR_DROP_SHIFT;
 
 	@:native("SWS_PARAM_DEFAULT")
-    final SWS_PARAM_DEFAULT;
+	final SWS_PARAM_DEFAULT;
 
 	@:native("SWS_PRINT_INFO")
-    final SWS_PRINT_INFO;
+	final SWS_PRINT_INFO;
 
 	@:native("SWS_FULL_CHR_H_INT")
-    final SWS_FULL_CHR_H_INT;
+	final SWS_FULL_CHR_H_INT;
 
 	@:native("SWS_FULL_CHR_H_INP")
-    final SWS_FULL_CHR_H_INP;
+	final SWS_FULL_CHR_H_INP;
 
 	@:native("SWS_DIRECT_BGR")
-    final SWS_DIRECT_BGR;
+	final SWS_DIRECT_BGR;
 
 	@:native("SWS_ACCURATE_RND")
-    final SWS_ACCURATE_RND;
+	final SWS_ACCURATE_RND;
 
 	@:native("SWS_BITEXACT")
-    final SWS_BITEXACT;
+	final SWS_BITEXACT;
 
 	@:native("SWS_ERROR_DIFFUSION")
-    final SWS_ERROR_DIFFUSION;
+	final SWS_ERROR_DIFFUSION;
 
 	@:native("SWS_MAX_REDUCE_CUTOFF")
-    final SWS_MAX_REDUCE_CUTOFF;
+	final SWS_MAX_REDUCE_CUTOFF;
 
 	@:native("SWS_CS_ITU709")
-    final SWS_CS_ITU709;
+	final SWS_CS_ITU709;
 
 	@:native("SWS_CS_FCC")
-    final SWS_CS_FCC;
+	final SWS_CS_FCC;
 
 	@:native("SWS_CS_ITU601")
-    final SWS_CS_ITU601;
+	final SWS_CS_ITU601;
 
 	@:native("SWS_CS_ITU624")
-    final SWS_CS_ITU624;
+	final SWS_CS_ITU624;
 
 	@:native("SWS_CS_SMPTE170M")
-    final SWS_CS_SMPTE170M;
+	final SWS_CS_SMPTE170M;
 
 	@:native("SWS_CS_SMPTE240M")
-    final SWS_CS_SMPTE240M;
+	final SWS_CS_SMPTE240M;
 
 	@:native("SWS_CS_DEFAULT")
-    final SWS_CS_DEFAULT;
+	final SWS_CS_DEFAULT;
 
 	@:native("SWS_CS_BT2020")
-    final SWS_CS_BT2020;
+	final SWS_CS_BT2020;
 }
 //---
 
 /**
- * набор обычных дефайнов
- */
+* набор обычных дефайнов
+*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
 extern abstract AVChannelLayout(Int64) from Int64 to Int64 {
- 	@:native("AV_CH_LAYOUT_MONO")
-    final AV_CH_LAYOUT_MONO;
+	@:native("AV_CH_LAYOUT_MONO")
+	final AV_CH_LAYOUT_MONO;
 
 	@:native("AV_CH_LAYOUT_STEREO")
 	final AV_CH_LAYOUT_STEREO;
@@ -2402,14 +2402,14 @@ extern abstract VaList from Char to Char {}
 
 @:include("linc_ffmpeg.h")
 extern class FfUtil {
-	@:native("AVERROR") // обёртка для кодов ошибок не из AV
+@:native("AVERROR") // обёртка для кодов ошибок не из AV
 	static function error(e: Int32): Int32;
 }
 //---
 
 @:include("linc_ffmpeg.h")
 extern class Av {
-    @:native("av_frame_alloc")
+	@:native("av_frame_alloc")
 	static function frameAlloc(): RawPointer<AVFrame>;
 
 	@:native("av_freep")
@@ -2561,9 +2561,9 @@ extern class AVRational {
 @:include("linc_ffmpeg.h")
 @:native("AVDeviceInfoList")
 extern class AVDeviceInfoList {
-    var nb_devices: Int32;
-    var default_device: Int32; 
-    var devices: RawPointer<RawPointer<AVDeviceInfo>>;
+	var nb_devices: Int32;
+	var default_device: Int32; 
+	var devices: RawPointer<RawPointer<AVDeviceInfo>>;
 }
 //---
 
@@ -2580,8 +2580,8 @@ extern class AVDeviceInfo {
 @:include("linc_ffmpeg.h")
 extern class AvCodec {
 	/**
-	 * делает avcodec_close
-	 */
+	* делает avcodec_close
+	*/
 	@:native("avcodec_free_context")
 	static function freeContext(avctx: RawPointer<RawPointer<AVCodecContext>>): Void;
 
@@ -2617,19 +2617,19 @@ extern class AvDevice {
 
 @:include("linc_ffmpeg.h")
 extern class AvFormat {
-    @:native("avformat_alloc_context")
+	@:native("avformat_alloc_context")
 	static function allocContext(): RawPointer<AVFormatContext>;
 
 	/**
-	 * делает avformat_free_context
-	 */
+	* делает avformat_free_context
+	*/
 	@:native("avformat_close_input")
 	static function closeInput(s: RawPointer<RawPointer<AVFormatContext>>): Void;
 
 	@:native("avformat_find_stream_info")
 	static function findStreamInfo(ic: RawPointer<AVFormatContext>, options: RawPointer<RawPointer<AVDictionary>>): Int32;
 
-    @:native("avformat_open_input")
+	@:native("avformat_open_input")
 	static function openInput(ps: RawPointer<RawPointer<AVFormatContext>>, url: ConstCharStar, fmt: RawPointer<AVInputFormat>, options: RawPointer<RawPointer<AVDictionary>>): Int32;	
 }
 //---
@@ -2645,9 +2645,9 @@ extern class AVInputFormat {
 //---
 
 /**
- * пустышка
- * хоть и объявлен в dict.h, при попытке получить поле этого типа говорит, что такого типа не существует
- */
+* пустышка
+* хоть и объявлен в dict.h, при попытке получить поле этого типа говорит, что такого типа не существует
+*/
 @:unreflective
 @:structAccess
 @:include("linc_ffmpeg.h")
