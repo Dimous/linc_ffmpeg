@@ -2058,9 +2058,6 @@ extern abstract AVSampleFormat(AVSampleFormatImpl) {
 extern class AVSampleFormatImpl {}
 //---
 
-/**
-* набор обычных дефайнов
-*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
@@ -2094,9 +2091,6 @@ extern abstract AVLog(Int32) from Int32 to Int32 {
 }
 //---
 
-/**
-* набор обычных дефайнов из error.h
-*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
@@ -2106,9 +2100,6 @@ extern abstract Error(Int32) from Int32 to Int32 {
 }
 //---
 
-/**
-* набор обычных дефайнов
-*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
@@ -2199,9 +2190,6 @@ extern abstract AVError(Int32) from Int32 to Int32 {
 }
 //---
 
-/**
-* набор обычных дефайнов
-*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
@@ -2298,9 +2286,6 @@ extern abstract SWSFlag(Int32) from Int32 to Int32 {
 }
 //---
 
-/**
-* набор обычных дефайнов
-*/
 @:enum
 @:unreflective
 @:include("linc_ffmpeg.h")
@@ -2391,9 +2376,6 @@ extern abstract AVChannelLayout(Int64) from Int64 to Int64 {
 }
 //---
 
-// (\w+),
-// @:native("$1")\n    final $1;\n
-
 @:scalar
 @:coreType
 @:native("va_list")
@@ -2402,7 +2384,7 @@ extern abstract VaList from Char to Char {}
 
 @:include("linc_ffmpeg.h")
 extern class FfUtil {
-@:native("AVERROR") // обёртка для кодов ошибок не из AV
+	@:native("AVERROR")
 	static function error(e: Int32): Int32;
 }
 //---
@@ -2532,8 +2514,8 @@ extern class AVFrame {
 	var format: AVSampleFormat;
 	var linesize: RawPointer<Int32>;
 	var channel_layout: AVChannelLayout;
-	var data: RawPointer<RawPointer<UInt8>>; // видео
-	var extended_data: RawPointer<RawPointer<UInt8>>;// аудио
+	var data: RawPointer<RawPointer<UInt8>>;
+	var extended_data: RawPointer<RawPointer<UInt8>>;
 }
 //---
 
@@ -2579,9 +2561,6 @@ extern class AVDeviceInfo {
 
 @:include("linc_ffmpeg.h")
 extern class AvCodec {
-	/**
-	* делает avcodec_close
-	*/
 	@:native("avcodec_free_context")
 	static function freeContext(avctx: RawPointer<RawPointer<AVCodecContext>>): Void;
 
@@ -2620,9 +2599,6 @@ extern class AvFormat {
 	@:native("avformat_alloc_context")
 	static function allocContext(): RawPointer<AVFormatContext>;
 
-	/**
-	* делает avformat_free_context
-	*/
 	@:native("avformat_close_input")
 	static function closeInput(s: RawPointer<RawPointer<AVFormatContext>>): Void;
 
@@ -2644,10 +2620,6 @@ extern class AVInputFormat {
 }
 //---
 
-/**
-* пустышка
-* хоть и объявлен в dict.h, при попытке получить поле этого типа говорит, что такого типа не существует
-*/
 @:unreflective
 @:structAccess
 @:include("linc_ffmpeg.h")
