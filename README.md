@@ -10,4 +10,4 @@ Lite hxcpp externs for [ffmpeg](https://github.com/FFmpeg/FFmpeg) which follow [
 
 ## Examples
 
-coming soon
+[playing video, audio and webcam input](https://github.com/Dimous/linc_ffmpeg_examples)
