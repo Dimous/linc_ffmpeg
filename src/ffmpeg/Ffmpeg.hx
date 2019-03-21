@@ -2421,6 +2421,9 @@ extern class Av {
 	@:native("av_dict_free")
 	static function dictFree(m: RawPointer<RawPointer<AVDictionary>>): Void;
 
+	@:native("av_new_packet")
+	static function newPacket(pkt: RawPointer<AVPacket>, size: Int32): Int32;
+
 	@:native("av_get_default_channel_layout")
 	static function getDefaultChannelLayout(nb_channels: Int32): AVChannelLayout;
 
@@ -2524,7 +2527,9 @@ extern class AVFrame {
 @:include("linc_ffmpeg.h")
 @:native("AVPacket")
 extern class AVPacket {
+	var size: Int32;
 	var stream_index: Int32;
+	var data: RawPointer<UInt8>;
 }
 //---
 
@@ -2561,6 +2566,9 @@ extern class AVDeviceInfo {
 
 @:include("linc_ffmpeg.h")
 extern class AvCodec {
+	@:native("avcodec_find_encoder")
+	static function findEncoder(id: AVCodecID): RawPointer<AVCodec>;
+
 	@:native("avcodec_free_context")
 	static function freeContext(avctx: RawPointer<RawPointer<AVCodecContext>>): Void;
 
@@ -2572,6 +2580,12 @@ extern class AvCodec {
 
 	@:native("avcodec_receive_frame")
 	static function receiveFrame(avctx: RawPointer<AVCodecContext>, frame: RawPointer<AVFrame>): Int32;
+
+	@:native("avcodec_receive_packet")
+	static function receivePacket(avctx: RawPointer<AVCodecContext>, avpkt: RawPointer<AVPacket>): Int32;
+
+	@:native("avcodec_send_frame")
+	static function sendFrame(avctx: RawPointer<AVCodecContext>, frame: RawConstPointer<AVFrame>): Int32;	
 
 	@:native("avcodec_parameters_to_context")
 	static function parametersToContext(codec: RawPointer<AVCodecContext>, par: RawConstPointer<AVCodecParameters>): Int32;
@@ -2647,6 +2661,7 @@ extern class AVCodecContext {
 	var channels: Int32;
 	var sample_rate: Int32;
 	var thread_count: Int32;
+	var time_base: AVRational;
 	var pix_fmt: AVPixelFormat;
 	var sample_fmt: AVSampleFormat;
 	var channel_layout: AVChannelLayout;
