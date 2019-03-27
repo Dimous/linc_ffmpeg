@@ -2376,6 +2376,36 @@ extern abstract AVChannelLayout(Int64) from Int64 to Int64 {
 }
 //---
 
+@:enum
+@:unreflective
+@:include("linc_ffmpeg.h")
+extern abstract SeekFlag(Int32) from Int32 to Int32 {
+	@:native("AVSEEK_FLAG_BACKWARD")
+	final AVSEEK_FLAG_BACKWARD;
+
+	@:native("AVSEEK_FLAG_BYTE")
+	final AVSEEK_FLAG_BYTE;
+
+	@:native("AVSEEK_FLAG_ANY")
+	final AVSEEK_FLAG_ANY;
+
+	@:native("AVSEEK_FLAG_FRAME")
+	final AVSEEK_FLAG_FRAME;
+}
+//---
+
+@:enum
+@:unreflective
+@:include("linc_ffmpeg.h")
+extern abstract TimeBase(Int64) from Int64 to Int64 {
+	@:native("AV_TIME_BASE")
+	final AV_TIME_BASE;
+
+	@:native("AV_NOPTS_VALUE")
+	final AV_NOPTS_VALUE;
+}
+//---
+
 @:scalar
 @:coreType
 @:native("va_list")
@@ -2391,6 +2421,9 @@ extern class FfUtil {
 
 @:include("linc_ffmpeg.h")
 extern class Av {
+	@:native("av_q2d")
+	static function q2d(a: AVRational): Float64;
+
 	@:native("av_frame_alloc")
 	static function frameAlloc(): RawPointer<AVFrame>;
 
@@ -2459,6 +2492,9 @@ extern class Av {
 
 	@:native("av_make_error_string")
 	static function makeErrorString(errbuf: RawConstPointer<Char>, errbuf_size: SizeT, errnum: Int32): RawPointer<Char>;
+
+	@:native("av_seek_frame")
+	static function seekFrame(s: RawPointer<AVFormatContext>, stream_index: Int32, timestamp: Int64, flags: Int32): Int32;
 
 	@:native("av_audio_fifo_alloc")
 	static function audioFifoAlloc(sample_fmt: AVSampleFormat, channels: Int32, nb_samples: Int32): RawPointer<AVAudioFifo>;
@@ -2569,6 +2605,9 @@ extern class AvCodec {
 	@:native("avcodec_find_encoder")
 	static function findEncoder(id: AVCodecID): RawPointer<AVCodec>;
 
+	@:native("avcodec_flush_buffers")
+	static function flushBuffers(avctx: RawPointer<AVCodecContext>): Void;
+
 	@:native("avcodec_free_context")
 	static function freeContext(avctx: RawPointer<RawPointer<AVCodecContext>>): Void;
 
@@ -2585,7 +2624,7 @@ extern class AvCodec {
 	static function receivePacket(avctx: RawPointer<AVCodecContext>, avpkt: RawPointer<AVPacket>): Int32;
 
 	@:native("avcodec_send_frame")
-	static function sendFrame(avctx: RawPointer<AVCodecContext>, frame: RawConstPointer<AVFrame>): Int32;	
+	static function sendFrame(avctx: RawPointer<AVCodecContext>, frame: RawConstPointer<AVFrame>): Int32;
 
 	@:native("avcodec_parameters_to_context")
 	static function parametersToContext(codec: RawPointer<AVCodecContext>, par: RawConstPointer<AVCodecParameters>): Int32;
@@ -2679,7 +2718,7 @@ extern class AVCodecParameters {}
 @:structAccess
 @:include("linc_ffmpeg.h")
 @:native("AVStream")
-extern class AVStream {	
+extern class AVStream {
 	var codecpar: RawPointer<AVCodecParameters>;
 }
 //---
@@ -2696,6 +2735,7 @@ extern class AVAudioFifo {}
 @:include("linc_ffmpeg.h")
 @:native("AVFormatContext")
 extern class AVFormatContext {
+	var start_time: Int64;
 	var streams: RawPointer<RawPointer<AVStream>>;
 }
 //---
