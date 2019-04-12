@@ -2735,6 +2735,7 @@ extern class AVAudioFifo {}
 @:include("linc_ffmpeg.h")
 @:native("AVFormatContext")
 extern class AVFormatContext {
+	var duration: Int64;
 	var start_time: Int64;
 	var streams: RawPointer<RawPointer<AVStream>>;
 }
